@@ -22,9 +22,10 @@ import androidx.compose.material3.ColorScheme
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.graphics.Color
 
-val MeshtasticGreen = Color(0xFF67EA94)
-val MeshtasticAlt = Color(0xFF2C2D3C)
-val HyperlinkBlue = Color(0xFF43C3B0)
+// Atlas / Geo brand accents
+val MeshtasticGreen = Color(0xFF1D9BF0) // primary accent blue
+val MeshtasticAlt = Color(0xFF020817) // deep slate background
+val HyperlinkBlue = Color(0xFF38BDF8) // link / secondary accent
 val AnnotationColor = Color(0xFF039BE5)
 
 object TracerouteColors {
