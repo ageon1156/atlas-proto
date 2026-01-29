@@ -141,7 +141,7 @@ fun SignalMetricsScreen(viewModel: MetricsViewModel = hiltViewModel(), onNavigat
             }
 
             LazyColumn(modifier = Modifier.fillMaxSize()) {
-                items(data) { meshPacket -> SignalMetricsCard(meshPacket) }
+                items(data) { meshPacket -> OrganicSignalMetricsCard(meshPacket) }
             }
         }
     }

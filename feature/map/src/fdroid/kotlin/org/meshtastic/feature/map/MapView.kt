@@ -128,8 +128,8 @@ import org.meshtastic.core.ui.util.showToast
 import org.meshtastic.feature.map.cluster.RadiusMarkerClusterer
 import org.meshtastic.feature.map.component.CacheLayout
 import org.meshtastic.feature.map.component.DownloadButton
-import org.meshtastic.feature.map.component.EditWaypointDialog
-import org.meshtastic.feature.map.component.MapButton
+import org.meshtastic.feature.map.component.OrganicEditWaypointDialog
+import org.meshtastic.feature.map.component.OrganicMapButton
 import org.meshtastic.feature.map.model.CustomTileSource
 import org.meshtastic.feature.map.model.MarkerWithLabel
 import org.meshtastic.feature.map.model.TracerouteOverlay
@@ -735,13 +735,13 @@ fun MapView(
                     modifier = Modifier.padding(top = 16.dp, end = 16.dp).align(Alignment.TopEnd),
                     verticalArrangement = Arrangement.spacedBy(8.dp),
                 ) {
-                    MapButton(
+                    OrganicMapButton(
                         onClick = { showMapStyleDialog = true },
                         icon = Icons.Outlined.Layers,
                         contentDescription = Res.string.map_style_selection,
                     )
                     Box(modifier = Modifier) {
-                        MapButton(
+                        OrganicMapButton(
                             onClick = { mapFilterExpanded = true },
                             icon = Icons.Outlined.Tune,
                             contentDescription = Res.string.map_filter,
@@ -829,7 +829,7 @@ fun MapView(
                         }
                     }
                     if (hasGps) {
-                        MapButton(
+                        OrganicMapButton(
                             icon =
                             if (myLocationOverlay == null) {
                                 Icons.Outlined.MyLocation
@@ -890,14 +890,14 @@ fun MapView(
     }
 
     if (showEditWaypointDialog != null) {
-        EditWaypointDialog(
+        OrganicEditWaypointDialog(
             waypoint = showEditWaypointDialog ?: return, // Safe call
             onSendClicked = { waypoint ->
                 Logger.d { "User clicked send waypoint ${waypoint.id}" }
                 showEditWaypointDialog = null
                 mapViewModel.sendWaypoint(
                     waypoint.copy {
-                        if (id == 0) id = mapViewModel.generatePacketId() ?: return@EditWaypointDialog
+                        if (id == 0) id = mapViewModel.generatePacketId() ?: return@OrganicEditWaypointDialog
                         if (name == "") name = "Dropped Pin"
                         if (expire == 0) expire = Int.MAX_VALUE
                         lockedTo = if (waypoint.lockedTo != 0) mapViewModel.myNodeNum ?: 0 else 0

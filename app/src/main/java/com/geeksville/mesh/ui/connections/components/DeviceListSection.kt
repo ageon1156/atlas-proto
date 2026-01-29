@@ -35,7 +35,7 @@ fun List<DeviceListEntry>.DeviceListSection(
     if (isNotEmpty()) {
         TitledCard(title = title, modifier = modifier) {
             forEach { device ->
-                DeviceListItem(
+                OrganicDeviceListItem(
                     connectionState =
                     connectionState.takeIf { device.fullAddress == selectedDevice } ?: ConnectionState.Disconnected,
                     device = device,

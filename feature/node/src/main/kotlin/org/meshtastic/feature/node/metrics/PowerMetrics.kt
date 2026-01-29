@@ -164,7 +164,7 @@ fun PowerMetricsScreen(viewModel: MetricsViewModel = hiltViewModel(), onNavigate
                 OptionLabel(stringResource(it.strRes))
             }
 
-            LazyColumn(modifier = Modifier.fillMaxSize()) { items(data) { telemetry -> PowerMetricsCard(telemetry) } }
+            LazyColumn(modifier = Modifier.fillMaxSize()) { items(data) { telemetry -> OrganicPowerMetricsCard(telemetry) } }
         }
     }
 }

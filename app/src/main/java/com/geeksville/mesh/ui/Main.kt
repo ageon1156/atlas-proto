@@ -154,6 +154,7 @@ import org.meshtastic.core.ui.qr.ScannedQrCodeDialog
 import org.meshtastic.core.ui.share.SharedContactDialog
 import org.meshtastic.core.ui.theme.StatusColors.StatusBlue
 import org.meshtastic.core.ui.theme.StatusColors.StatusGreen
+import org.meshtastic.core.ui.theme.organicTweenShort
 import org.meshtastic.feature.node.metrics.annotateTraceroute
 import org.meshtastic.proto.MeshProtos
 
@@ -513,7 +514,11 @@ fun MainScreen(uIViewModel: UIViewModel = hiltViewModel(), scanModel: BTScanMode
                                         }
                                     },
                                 ) {
-                                    Crossfade(isSelected, label = "BottomBarIcon") { isSelectedState ->
+                                    Crossfade(
+                                        targetState = isSelected,
+                                        animationSpec = organicTweenShort(),
+                                        label = "BottomBarIcon"
+                                    ) { isSelectedState ->
                                         Icon(
                                             imageVector = destination.icon,
                                             contentDescription = stringResource(destination.label),

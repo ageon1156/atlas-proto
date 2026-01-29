@@ -110,7 +110,6 @@ internal fun WelcomeScreen(onGetStarted: () -> Unit) {
                 Spacer(modifier = Modifier.height(16.dp))
             }
             Spacer(modifier = Modifier.weight(1f))
-            AnalyticsIntro()
         }
     }
 }

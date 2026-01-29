@@ -16,7 +16,7 @@
   -->
 
 <resources>
-    <string name="meshtastic_app_name">Meshtastic</string>
+    <string name="meshtastic_app_name">Atlas</string>
 
     <!-- Language tags native names (not available via .getDisplayLanguage) -->
     <string name="fr_HT" translatable="false">Kreyòl ayisyen</string>
@@ -202,7 +202,7 @@
     <string name="discard_changes">Discard</string>
     <string name="save_changes">Save</string>
     <string name="new_channel_rcvd">New Channel URL received</string>
-    <string name="permission_missing">Meshtastic needs location permissions enabled to find new devices via Bluetooth. You can disable when not in use.</string>
+    <string name="permission_missing">Atlas needs location permissions enabled to find new devices via Bluetooth. You can disable when not in use.</string>
     <string name="report_bug">Report Bug</string>
     <string name="report_a_bug">Report a bug</string>
     <string name="report_bug_text">Are you sure you want to report a bug? After reporting, please post in https://github.com/orgs/meshtastic/discussions so we can match up the report with what you found.</string>
@@ -335,7 +335,7 @@
     <string name="bluetooth_disabled">Bluetooth is disabled. Please enable it in your device settings.</string>
     <string name="open_settings">Open settings</string>
     <string name="firmware_version">Firmware version: %1$s</string>
-    <string name="permission_missing_31">Meshtastic needs "Nearby devices" permissions enabled to find and connect to devices via Bluetooth. You can disable when not in use.</string>
+    <string name="permission_missing_31">Atlas needs "Nearby devices" permissions enabled to find and connect to devices via Bluetooth. You can disable when not in use.</string>
     <string name="direct_message">Direct Message</string>
     <string name="nodedb_reset">NodeDB reset</string>
     <string name="delivery_confirmed">Delivery confirmed</string>
@@ -845,7 +845,7 @@
     <string name="no_network_devices">No Network devices found.</string>
     <string name="no_usb_devices">No USB Serial devices found.</string>
     <string name="scroll_to_bottom">Scroll to bottom</string>
-    <string name="meshtastic">Meshtastic</string>
+    <string name="meshtastic">Atlas</string>
     <string name="scanning">Scanning</string>
     <string name="security_icon_description">Security Status</string>
     <string name="security_icon_secure">Secure</string>
@@ -912,7 +912,7 @@
     <string name="installed_firmware_version">Currently Installed</string>
     <string name="latest_stable_firmware">Latest stable</string>
     <string name="latest_alpha_firmware">Latest alpha</string>
-    <string name="supported_by_community">Supported by Meshtastic Community</string>
+    <string name="supported_by_community">Supported by Atlas Community</string>
     <string name="firmware_edition">Firmware Edition</string>
     <string name="recent_network_devices">Recent Network Devices</string>
     <string name="discovered_network_devices">Discovered Network Devices</string>
@@ -935,11 +935,11 @@
     <string name="critical_alerts_description">Select packets sent as critical will ignore the mute switch and Do Not Disturb settings in the OS notification center.</string>
     <string name="configure_notification_permissions">Configure notification permissions</string>
     <string name="phone_location">Phone Location</string>
-    <string name="phone_location_description">Meshtastic uses your phone's location to enable a number of features. You can update your location permissions at any time from settings.</string>
+    <string name="phone_location_description">Atlas uses your phone's location to enable a number of features. You can update your location permissions at any time from settings.</string>
     <string name="share_location">Share Location</string>
     <string name="share_location_description">Use your phone GPS to send locations to your node to instead of using a hardware GPS on your node.</string>
     <string name="distance_measurements">Distance Measurements</string>
-    <string name="distance_measurements_description">Display the distance between your phone and other Meshtastic nodes with positions.</string>
+    <string name="distance_measurements_description">Display the distance between your phone and other nodes with positions.</string>
     <string name="distance_filters">Distance Filters</string>
     <string name="distance_filters_description">Filter the node list and mesh map based on proximity to your phone.</string>
     <string name="mesh_map_location">Mesh Map Location</string>
@@ -953,7 +953,7 @@
         permission. Please enable this in the notification settings.
     </string>
     <string name="configure_critical_alerts">Configure Critical Alerts</string>
-    <string name="notification_permissions_description">Meshtastic uses notifications to keep you updated on new messages and other important events. You can update your notification permissions at any time from settings.</string>
+    <string name="notification_permissions_description">Atlas uses notifications to keep you updated on new messages and other important events. You can update your notification permissions at any time from settings.</string>
     <string name="next">Next</string>
     <string name="grant_permissions">Grant Permissions</string>
     <string name="nodes_queued_for_deletion">%1$d nodes queued for deletion:</string>

@@ -110,11 +110,11 @@ import org.meshtastic.core.ui.component.NodeChip
 import org.meshtastic.core.ui.theme.TracerouteColors
 import org.meshtastic.core.ui.util.formatAgo
 import org.meshtastic.core.ui.util.formatPositionTime
-import org.meshtastic.feature.map.component.ClusterItemsListDialog
-import org.meshtastic.feature.map.component.CustomMapLayersSheet
 import org.meshtastic.feature.map.component.CustomTileProviderManagerSheet
-import org.meshtastic.feature.map.component.EditWaypointDialog
-import org.meshtastic.feature.map.component.MapControlsOverlay
+import org.meshtastic.feature.map.component.OrganicClusterItemsListDialog
+import org.meshtastic.feature.map.component.OrganicCustomMapLayersSheet
+import org.meshtastic.feature.map.component.OrganicEditWaypointDialog
+import org.meshtastic.feature.map.component.OrganicMapControlsOverlay
 import org.meshtastic.feature.map.component.NodeClusterMarkers
 import org.meshtastic.feature.map.component.WaypointMarkers
 import org.meshtastic.feature.map.model.NodeClusterItem
@@ -612,7 +612,7 @@ fun MapView(
                 modifier = Modifier.align(Alignment.BottomStart).padding(bottom = 48.dp),
             )
             editingWaypoint?.let { waypointToEdit ->
-                EditWaypointDialog(
+                OrganicEditWaypointDialog(
                     waypoint = waypointToEdit,
                     onSendClicked = { updatedWp ->
                         var finalWp = updatedWp
@@ -638,7 +638,7 @@ fun MapView(
                 )
             }
 
-            MapControlsOverlay(
+            OrganicMapControlsOverlay(
                 modifier = Modifier.align(Alignment.TopCenter).padding(top = 8.dp),
                 mapFilterMenuExpanded = mapFilterMenuExpanded,
                 onMapFilterMenuDismissRequest = { mapFilterMenuExpanded = false },
@@ -685,11 +685,11 @@ fun MapView(
         }
         if (showLayersBottomSheet) {
             ModalBottomSheet(onDismissRequest = { showLayersBottomSheet = false }) {
-                CustomMapLayersSheet(mapLayers, onToggleVisibility, onRemoveLayer, onAddLayerClicked)
+                OrganicCustomMapLayersSheet(mapLayers, onToggleVisibility, onRemoveLayer, onAddLayerClicked)
             }
         }
         showClusterItemsDialog?.let {
-            ClusterItemsListDialog(
+            OrganicClusterItemsListDialog(
                 items = it,
                 onDismiss = { showClusterItemsDialog = null },
                 onItemClick = { item ->

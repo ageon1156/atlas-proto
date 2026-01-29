@@ -82,7 +82,7 @@ import org.meshtastic.core.ui.component.smartScrollToTop
 import org.meshtastic.core.ui.theme.StatusColors.StatusRed
 import org.meshtastic.feature.node.component.NodeActionDialogs
 import org.meshtastic.feature.node.component.NodeFilterTextField
-import org.meshtastic.feature.node.component.NodeItem
+import org.meshtastic.feature.node.component.OrganicNodeItem
 import org.meshtastic.proto.AdminProtos
 
 @OptIn(ExperimentalMaterial3ExpressiveApi::class)
@@ -214,7 +214,7 @@ fun NodeListScreen(
 
                         val isActive = remember(activeNodeId, node.num) { activeNodeId == node.num }
 
-                        NodeItem(
+                        OrganicNodeItem(
                             modifier = Modifier.animateItem(),
                             thisNode = ourNode,
                             thatNode = node,

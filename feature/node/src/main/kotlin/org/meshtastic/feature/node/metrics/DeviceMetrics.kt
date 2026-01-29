@@ -167,7 +167,7 @@ fun DeviceMetricsScreen(viewModel: MetricsViewModel = hiltViewModel(), onNavigat
             }
 
             /* Device Metric Cards */
-            LazyColumn(modifier = Modifier.fillMaxSize()) { items(data) { telemetry -> DeviceMetricsCard(telemetry) } }
+            LazyColumn(modifier = Modifier.fillMaxSize()) { items(data) { telemetry -> OrganicDeviceMetricsCard(telemetry) } }
         }
     }
 }
@@ -378,7 +378,7 @@ private fun DeviceMetricsCardPreview() {
                     .setUptimeSeconds(7200),
             )
             .build()
-    AppTheme { DeviceMetricsCard(telemetry = telemetry) }
+    AppTheme { OrganicDeviceMetricsCard(telemetry = telemetry) }
 }
 
 @Suppress("detekt:MagicNumber") // fake data

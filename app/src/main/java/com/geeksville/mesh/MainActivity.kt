@@ -52,6 +52,7 @@ import org.meshtastic.core.strings.channel_invalid
 import org.meshtastic.core.strings.contact_invalid
 import org.meshtastic.core.ui.theme.AppTheme
 import org.meshtastic.core.ui.theme.MODE_DYNAMIC
+import org.meshtastic.core.ui.theme.OrganicMeshtasticTheme
 import org.meshtastic.core.ui.util.showToast
 import org.meshtastic.feature.intro.AppIntroductionScreen
 import javax.inject.Inject
@@ -89,7 +90,8 @@ class MainActivity : AppCompatActivity() {
                     else -> isSystemInDarkTheme()
                 }
 
-            AppTheme(dynamicColor = dynamic, darkTheme = dark) {
+            // Use Organic Tech theme instead of default AppTheme
+            OrganicMeshtasticTheme(dynamicColor = dynamic, darkTheme = dark) {
                 val view = LocalView.current
                 if (!view.isInEditMode) {
                     SideEffect { AppCompatDelegate.setDefaultNightMode(theme) }

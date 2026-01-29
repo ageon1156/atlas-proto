@@ -140,7 +140,7 @@ fun EnvironmentMetricsScreen(viewModel: MetricsViewModel = hiltViewModel(), onNa
             }
 
             LazyColumn(modifier = Modifier.fillMaxSize()) {
-                items(processedTelemetries) { telemetry -> EnvironmentMetricsCard(telemetry, state.isFahrenheit) }
+                items(processedTelemetries) { telemetry -> OrganicEnvironmentMetricsCard(telemetry, state.isFahrenheit) }
             }
         }
     }

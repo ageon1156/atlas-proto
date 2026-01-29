@@ -571,7 +571,7 @@ private fun LazyListScope.contactListPlaceholdersItems(
         val selected by remember { derivedStateOf { selectedList.contains(placeholder.contactKey) } }
         val isActive = remember(placeholder.contactKey, activeContactKey) { placeholder.contactKey == activeContactKey }
 
-        ContactItem(
+        OrganicContactItem(
             contact = placeholder,
             selected = selected,
             isActive = isActive,
@@ -608,7 +608,7 @@ private fun LazyListScope.contactListPagedItems(
             val selected by remember { derivedStateOf { selectedList.contains(contact.contactKey) } }
             val isActive = remember(contact.contactKey, activeContactKey) { contact.contactKey == activeContactKey }
 
-            ContactItem(
+            OrganicContactItem(
                 contact = contact,
                 selected = selected,
                 isActive = isActive,
