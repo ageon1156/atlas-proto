@@ -28,7 +28,10 @@ configure<LibraryExtension> {
 
 dependencies {
     implementation(projects.core.common)
+    implementation(projects.core.data)
+    implementation(projects.core.database)
     implementation(projects.core.model)
+    implementation(projects.core.proto)
     implementation(projects.core.navigation)
     implementation(projects.core.service)
     implementation(projects.core.strings)

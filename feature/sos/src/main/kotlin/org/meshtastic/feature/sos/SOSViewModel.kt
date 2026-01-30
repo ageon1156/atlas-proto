@@ -32,6 +32,7 @@ import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 import org.meshtastic.core.common.hasLocationPermission
+import org.meshtastic.core.data.repository.NodeRepository
 import org.meshtastic.core.model.DataPacket
 import org.meshtastic.core.service.ConnectionState
 import org.meshtastic.core.service.ServiceRepository
@@ -52,6 +53,7 @@ sealed interface SOSUiState {
 class SOSViewModel @Inject constructor(
     @ApplicationContext private val context: Context,
     private val serviceRepository: ServiceRepository,
+    private val nodeRepository: NodeRepository,
 ) : ViewModel() {
 
     private val _uiState = MutableStateFlow<SOSUiState>(SOSUiState.Ready)
@@ -124,12 +126,14 @@ class SOSViewModel @Inject constructor(
     }
 
     private fun formatSOSMessage(location: Location?): String {
-        val timestamp = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'", Locale.US).apply {
-            timeZone = TimeZone.getTimeZone("UTC")
-        }.format(Date())
+        val longName = nodeRepository.ourNodeInfo.value?.user?.longName
 
         return buildString {
-            appendLine("SOS EMERGENCY")
+            if (longName.isNullOrBlank()) {
+                appendLine("SOS EMERGENCY")
+            } else {
+                appendLine("SOS EMERGENCY from $longName")
+            }
             if (location != null) {
                 appendLine("Location: %.4f, %.4f".format(location.latitude, location.longitude))
                 append(
