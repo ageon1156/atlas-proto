@@ -43,6 +43,7 @@ If you encounter any problems or have questions, [ask us on the discord](https:/
 
 ### Understanding the Codebase
 
+- **[QUICK_START.md](QUICK_START.md)** - Quick reference guide to navigate and understand the codebase
 - **[ARCHITECTURE.md](ARCHITECTURE.md)** - Comprehensive architectural overview explaining the app's structure, patterns, and key components
 - **[HOW_IT_WORKS.md](HOW_IT_WORKS.md)** - Detailed walkthrough of how data flows through the system and how major features work
 - **[AGENTS.md](AGENTS.md)** - Guide for AI agents and developers working on the codebase
