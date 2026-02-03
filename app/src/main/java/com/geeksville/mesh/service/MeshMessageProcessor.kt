@@ -43,6 +43,43 @@ import javax.inject.Inject
 import javax.inject.Singleton
 import kotlin.time.Duration.Companion.milliseconds
 
+/**
+ * MeshMessageProcessor is responsible for parsing and routing incoming protobuf messages
+ * from mesh radio devices.
+ *
+ * This singleton processor acts as the first stage in the data pipeline:
+ * - Receives raw byte streams from RadioInterfaceService
+ * - Deserializes bytes into FromRadio protobuf messages
+ * - Handles early packet buffering (packets arriving before DB is ready)
+ * - Logs all packets to MeshLog for debugging
+ * - Routes parsed messages to appropriate handlers via FromRadioPacketHandler
+ *
+ * Key Responsibilities:
+ * 1. Protobuf Deserialization: Safely parse FromRadio messages with error handling
+ * 2. Early Buffering: Queue packets that arrive before node database is initialized
+ * 3. Packet Logging: Track all received packets with UUIDs for debugging
+ * 4. Routing: Dispatch to appropriate handlers based on payload type
+ *
+ * Buffering Strategy:
+ * - Packets received before nodeDBReady = true are queued in earlyReceivedPackets
+ * - Max buffer size: 128 packets (older packets dropped if exceeded)
+ * - Flushed automatically when database becomes ready
+ * - Prevents packet loss during app initialization
+ *
+ * Supported Message Types (PayloadVariantCase):
+ * - PACKET: Mesh data packets (messages, telemetry, positions, etc.)
+ * - MY_INFO: Local device information
+ * - NODE_INFO: Remote node discovery
+ * - CONFIG, MODULE_CONFIG: Device configuration
+ * - CHANNEL: Channel settings
+ * - CONFIG_COMPLETE_ID: Configuration download complete
+ * - REBOOTED: Device reboot notification
+ * - And more...
+ *
+ * @see FromRadioPacketHandler for routing logic by message type
+ * @see RadioInterfaceService for the source of raw byte streams
+ * @see MeshNodeManager for node database readiness tracking
+ */
 @Suppress("TooManyFunctions")
 @Singleton
 class MeshMessageProcessor

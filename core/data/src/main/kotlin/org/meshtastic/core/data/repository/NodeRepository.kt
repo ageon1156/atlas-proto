@@ -48,6 +48,57 @@ import org.meshtastic.proto.MeshProtos
 import javax.inject.Inject
 import javax.inject.Singleton
 
+/**
+ * NodeRepository is the single source of truth for all mesh node information.
+ *
+ * This singleton repository manages:
+ * - Local device information (myNodeInfo, ourNodeInfo)
+ * - Remote mesh nodes (all other devices in the network)
+ * - Node discovery and updates
+ * - Database persistence and in-memory caching
+ *
+ * Architecture:
+ * - Exposes StateFlow for reactive UI updates
+ * - Combines data from Room database and in-memory sources
+ * - Provides both read (queries) and write (updates) operations
+ * - Scoped to process lifecycle (survives Activity recreation)
+ *
+ * Key StateFlows Exposed:
+ * - myNodeInfo: Local device hardware information (MyNodeEntity)
+ * - ourNodeInfo: Our mesh node entry (Node with user info, position, etc.)
+ * - myId: Our unique user ID string (e.g., "!abcd1234")
+ * - nodeDBbyNum: All nodes indexed by node number (Int)
+ * - nodeList: All nodes as a list (sorted, filtered)
+ * - onlineNodesList: Currently online nodes only
+ *
+ * Data Sources:
+ * - NodeInfoReadDataSource: Queries from Room database
+ * - NodeInfoWriteDataSource: Inserts/updates to Room database
+ * - In-memory updates from MeshNodeManager (service layer)
+ *
+ * Usage Pattern:
+ * ```kotlin
+ * @HiltViewModel
+ * class MyViewModel @Inject constructor(
+ *     private val nodeRepository: NodeRepository
+ * ) : ViewModel() {
+ *     val nodes = nodeRepository.nodeList
+ *         .stateIn(viewModelScope, SharingStarted.Lazily, emptyList())
+ * }
+ * ```
+ *
+ * Node Lifecycle:
+ * 1. Device broadcasts NODEINFO_APP packet over mesh
+ * 2. MeshService receives and parses packet
+ * 3. Repository updates via setNode(NodeEntity)
+ * 4. Database persists the node
+ * 5. StateFlows emit updated node list
+ * 6. UI recomposes with new node
+ *
+ * @see Node for the domain model combining all node data
+ * @see NodeEntity for the Room database entity
+ * @see MyNodeEntity for local device metadata
+ */
 @Singleton
 @Suppress("TooManyFunctions")
 class NodeRepository
