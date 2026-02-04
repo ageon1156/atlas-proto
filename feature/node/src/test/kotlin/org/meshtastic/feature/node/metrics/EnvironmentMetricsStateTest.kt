@@ -91,3 +91,4 @@ class EnvironmentMetricsStateTest {
         assertEquals(0.0f, result.rightMinMax.second, 0.01f)
     }
 }
+

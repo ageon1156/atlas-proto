@@ -29,3 +29,4 @@ class NopInterfaceSpec @Inject constructor(
         return factory.create(rest)
     }
 }
+

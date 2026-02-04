@@ -111,3 +111,4 @@ class EditDeviceProfileDialogTest {
         Assert.assertEquals(deviceProfile, actualDeviceProfile)
     }
 }
+

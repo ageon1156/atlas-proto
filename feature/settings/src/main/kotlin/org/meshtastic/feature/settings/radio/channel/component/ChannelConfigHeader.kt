@@ -55,3 +55,4 @@ internal fun ChannelConfigHeader(frequency: Float, slot: Int) {
 private fun ChannelConfigHeaderPreview() {
     AppTheme { ChannelConfigHeader(frequency = 913.125f, slot = 45) }
 }
+

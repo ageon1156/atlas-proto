@@ -259,3 +259,4 @@ constructor(
     private fun ByteArray.toHexString(): String =
         this.joinToString(",") { byte -> String.format(Locale.US, "0x%02x", byte) }
 }
+

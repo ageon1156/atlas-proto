@@ -56,3 +56,4 @@ class FDroidNetworkModule {
             throw NotImplementedError("API calls to getFirmwareReleases are not supported on Fdroid builds.")
     }
 }
+

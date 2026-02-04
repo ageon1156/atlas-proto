@@ -38,3 +38,4 @@ interface FirmwareReleaseDao {
     @Query("SELECT * FROM firmware_release WHERE release_type = :releaseType")
     suspend fun getReleasesByType(releaseType: FirmwareReleaseType): List<FirmwareReleaseEntity>
 }
+

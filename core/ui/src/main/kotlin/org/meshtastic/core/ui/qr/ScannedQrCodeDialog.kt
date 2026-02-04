@@ -320,3 +320,4 @@ private fun ScannedQrCodeDialogPreview() {
         onConfirm = {},
     )
 }
+

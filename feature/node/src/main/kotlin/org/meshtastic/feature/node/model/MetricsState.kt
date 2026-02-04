@@ -147,3 +147,4 @@ enum class TimeFrame(val seconds: Long, val strRes: StringResource) {
         return dp.takeIf { it != 0.dp } ?: screenWidth.dp
     }
 }
+

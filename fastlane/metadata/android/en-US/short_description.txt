@@ -1,1 +1,2 @@
-The official app for Meshtastic, an open-source, off-grid, mesh radio.
+An open-source mesh radio communication app for Android.
+

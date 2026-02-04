@@ -64,3 +64,4 @@ internal fun ConnectivityManager.observeNetworks(
         unregisterNetworkCallback(callback)
     }
 }
+

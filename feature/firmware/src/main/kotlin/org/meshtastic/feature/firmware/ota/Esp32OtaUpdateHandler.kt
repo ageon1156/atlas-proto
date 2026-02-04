@@ -341,3 +341,4 @@ constructor(
         updateState(FirmwareUpdateState.Success)
     }
 }
+

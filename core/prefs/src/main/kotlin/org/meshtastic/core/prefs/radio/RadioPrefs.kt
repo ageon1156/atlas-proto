@@ -41,3 +41,4 @@ fun RadioPrefs.isNoop() = devAddr?.startsWith("n") == true
 class RadioPrefsImpl @Inject constructor(@RadioSharedPreferences prefs: SharedPreferences) : RadioPrefs {
     override var devAddr: String? by NullableStringPrefDelegate(prefs, "devAddr2", null)
 }
+

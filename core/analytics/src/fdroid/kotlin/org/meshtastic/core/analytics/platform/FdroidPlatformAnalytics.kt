@@ -65,3 +65,4 @@ class FdroidPlatformAnalytics @Inject constructor() : PlatformAnalytics {
         Logger.d { "Track called: event=$event, properties=${properties.toList()}" }
     }
 }
+

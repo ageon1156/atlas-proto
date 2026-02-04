@@ -23,3 +23,4 @@ import com.google.android.gms.maps.MapsInitializer
 fun initializeMaps(context: Context) {
     MapsInitializer.initialize(context)
 }
+

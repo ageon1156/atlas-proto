@@ -59,3 +59,4 @@ class UsbManager @Inject constructor(@ApplicationContext private val context: Co
         }
     }
 }
+

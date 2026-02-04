@@ -64,3 +64,4 @@ open class OnlineTileSourceAuth(
         mImageFilenameEnding +
         "?appId=$apiKey"
 }
+

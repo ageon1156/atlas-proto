@@ -306,3 +306,4 @@ private fun IndoorAirQualityPreview() {
         IndoorAirQuality(iaq = 500, displayMode = IaqDisplayMode.Gradient)
     }
 }
+

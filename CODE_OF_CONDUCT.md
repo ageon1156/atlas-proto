@@ -1,4 +1,4 @@
-# Contributor Covenant Code of Conduct
+# Code of Conduct
 
-The Meshtastic Firmware project is subject to the code of conduct for the parent project, which can be found here:
-https://meshtastic.org/docs/legal/conduct/
+Be respectful and considerate in all interactions. Help others by reviewing pull requests and answering questions when possible.
+

@@ -97,3 +97,4 @@ internal fun DrawableInfoCard(@DrawableRes iconRes: Int, text: String, value: St
 
 inline fun Modifier.thenIf(precondition: Boolean, action: Modifier.() -> Modifier): Modifier =
     if (precondition) action() else this
+

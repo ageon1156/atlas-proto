@@ -33,3 +33,4 @@ internal class StringSetPrefDelegate(
     override fun setValue(thisRef: Any?, property: KProperty<*>, value: Set<String>) =
         prefs.edit { putStringSet(key, value) }
 }
+

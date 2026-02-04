@@ -65,3 +65,4 @@ fun WarningDialog(
 private fun WarningDialogPreview() {
     AppTheme { WarningDialog(title = "Factory Reset?", onDismiss = {}, onConfirm = {}) }
 }
+

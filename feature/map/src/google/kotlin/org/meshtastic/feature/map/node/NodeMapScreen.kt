@@ -51,3 +51,4 @@ fun NodeMapScreen(nodeMapViewModel: NodeMapViewModel, onNavigateUp: () -> Unit) 
         }
     }
 }
+

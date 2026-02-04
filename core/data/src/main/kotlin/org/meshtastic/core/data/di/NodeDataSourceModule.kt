@@ -36,3 +36,4 @@ interface NodeDataSourceModule {
     @Binds @Singleton
     fun bindNodeInfoWriteDataSource(impl: SwitchingNodeInfoWriteDataSource): NodeInfoWriteDataSource
 }
+

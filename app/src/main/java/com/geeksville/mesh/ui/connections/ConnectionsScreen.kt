@@ -357,3 +357,4 @@ fun ConnectionsScreen(
 }
 
 private const val SCAN_PERIOD: Long = 10000 // 10 seconds
+

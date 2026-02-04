@@ -507,3 +507,4 @@ sealed class FirmwareUpdateMethod(val description: StringResource) {
 
     object Unknown : FirmwareUpdateMethod(Res.string.unknown)
 }
+

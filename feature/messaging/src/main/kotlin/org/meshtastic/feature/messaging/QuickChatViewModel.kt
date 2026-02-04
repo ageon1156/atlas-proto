@@ -47,3 +47,4 @@ class QuickChatViewModel @Inject constructor(private val quickChatActionReposito
     fun deleteQuickChatAction(action: QuickChatAction) =
         viewModelScope.launch(Dispatchers.IO) { quickChatActionRepository.delete(action) }
 }
+

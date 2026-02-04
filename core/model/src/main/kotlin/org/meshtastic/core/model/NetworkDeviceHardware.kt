@@ -42,3 +42,4 @@ data class NetworkDeviceHardware(
     @SerialName("tags") val tags: List<String>? = null,
     @SerialName("variant") val variant: String? = null,
 )
+

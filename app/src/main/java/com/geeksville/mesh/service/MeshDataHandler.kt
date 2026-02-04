@@ -824,3 +824,4 @@ constructor(
         private val batteryPercentCooldowns = ConcurrentHashMap<Int, Long>()
     }
 }
+

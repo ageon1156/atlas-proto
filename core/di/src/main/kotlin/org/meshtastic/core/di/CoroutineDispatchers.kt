@@ -25,3 +25,4 @@ data class CoroutineDispatchers(
     val main: CoroutineDispatcher,
     val default: CoroutineDispatcher,
 )
+

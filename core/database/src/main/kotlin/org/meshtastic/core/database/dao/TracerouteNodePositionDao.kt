@@ -36,3 +36,4 @@ interface TracerouteNodePositionDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(entities: List<TracerouteNodePositionEntity>)
 }
+

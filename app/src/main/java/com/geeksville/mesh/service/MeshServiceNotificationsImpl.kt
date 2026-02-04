@@ -835,3 +835,4 @@ private fun TelemetryProtos.DeviceMetrics?.formatToString(): String? = this?.all
         }
     }
     ?.joinToString("\n")
+

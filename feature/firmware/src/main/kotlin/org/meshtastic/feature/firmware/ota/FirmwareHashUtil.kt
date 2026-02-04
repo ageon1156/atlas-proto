@@ -46,3 +46,4 @@ object FirmwareHashUtil {
     /** Convert byte array to hex string. */
     fun bytesToHex(bytes: ByteArray): String = bytes.joinToString("") { "%02x".format(it) }
 }
+

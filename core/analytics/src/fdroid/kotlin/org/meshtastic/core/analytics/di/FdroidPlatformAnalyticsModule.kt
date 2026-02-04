@@ -34,3 +34,4 @@ abstract class FdroidPlatformAnalyticsModule {
     @Singleton
     abstract fun bindPlatformHelper(fdroidPlatformAnalytics: FdroidPlatformAnalytics): PlatformAnalytics
 }
+

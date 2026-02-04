@@ -27,3 +27,4 @@ fun getString(stringResource: StringResource): String = runBlocking {
 fun getString(stringResource: StringResource, vararg formatArgs: Any): String = runBlocking {
     org.jetbrains.compose.resources.getString(stringResource, *formatArgs)
 }
+

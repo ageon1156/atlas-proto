@@ -48,3 +48,4 @@ data class NodeClusterItem(val node: Node, val nodePosition: LatLng, val nodeTit
         return precisionMap[this.node.position.precisionBits]
     }
 }
+

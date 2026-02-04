@@ -31,3 +31,4 @@ constructor(
     suspend fun getAllDeviceHardware(): List<NetworkDeviceHardware> =
         withContext(dispatchers.io) { apiService.getDeviceHardware() }
 }
+

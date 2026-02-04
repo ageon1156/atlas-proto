@@ -58,3 +58,4 @@ class UsbBroadcastReceiver @Inject constructor(private val usbRepository: UsbRep
         }
     }
 }
+

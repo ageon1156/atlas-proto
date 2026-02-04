@@ -67,3 +67,4 @@ private fun IconInfoPreview() {
         IconInfo(icon = MeshtasticIcons.Elevation, contentDescription = "Elevation", content = { Text(text = "100") })
     }
 }
+

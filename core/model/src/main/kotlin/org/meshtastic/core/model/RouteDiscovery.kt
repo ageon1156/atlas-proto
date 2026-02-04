@@ -135,3 +135,4 @@ fun TracerouteMapAvailability.toMessageRes(): StringResource? = when (this) {
     TracerouteMapAvailability.MissingEndpoints -> Res.string.traceroute_endpoint_missing
     TracerouteMapAvailability.NoMappableNodes -> Res.string.traceroute_map_no_data
 }
+

@@ -66,3 +66,4 @@ fun LazyListState.smartScrollToIndex(coroutineScope: CoroutineScope, targetIndex
         animateScrollToItem(index = clampedTarget)
     }
 }
+

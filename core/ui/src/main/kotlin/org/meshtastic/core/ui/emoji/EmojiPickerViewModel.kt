@@ -31,3 +31,4 @@ class EmojiPickerViewModel @Inject constructor(private val customEmojiPrefs: Cus
             customEmojiPrefs.customEmojiFrequency = value
         }
 }
+

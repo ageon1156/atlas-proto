@@ -163,3 +163,4 @@ abstract class StreamInterface(protected val service: RadioInterfaceService) : I
         ptr = nextPtr
     }
 }
+

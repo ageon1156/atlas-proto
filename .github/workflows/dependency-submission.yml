@@ -11,7 +11,7 @@ permissions:
 jobs:
   dependency-submission:
     runs-on: ubuntu-latest
-    if: github.repository == 'meshtastic/Meshtastic-Android'
+    if: 
 
     steps:
       - uses: actions/checkout@v6

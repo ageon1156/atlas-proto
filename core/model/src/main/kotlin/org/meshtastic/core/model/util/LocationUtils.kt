@@ -81,3 +81,4 @@ fun bearing(lat1: Double, lon1: Double, lat2: Double, lon2: Double): Double {
 
     return (bearing + 360) % 360
 }
+

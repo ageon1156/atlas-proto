@@ -37,3 +37,4 @@ class ApiServiceImpl @Inject constructor(private val client: HttpClient) : ApiSe
     override suspend fun getFirmwareReleases(): NetworkFirmwareReleases =
         client.get("https://api.meshtastic.org/github/firmware/list").body()
 }
+

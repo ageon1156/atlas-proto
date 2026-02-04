@@ -59,3 +59,4 @@ interface MeshLogDao {
     @Query("DELETE FROM log WHERE received_date < :cutoffTimestamp")
     suspend fun deleteOlderThan(cutoffTimestamp: Long)
 }
+

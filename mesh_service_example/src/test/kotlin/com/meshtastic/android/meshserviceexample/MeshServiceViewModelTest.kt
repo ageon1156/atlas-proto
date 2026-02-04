@@ -46,3 +46,4 @@ class MeshServiceViewModelTest {
         assertEquals(false, viewModel.serviceConnectionStatus.value)
     }
 }
+

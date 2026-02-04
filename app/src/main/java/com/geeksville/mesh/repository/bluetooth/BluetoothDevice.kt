@@ -47,3 +47,4 @@ internal fun BluetoothDevice.createBond(context: Context): Flow<Int> = callbackF
 
     awaitClose { context.unregisterReceiver(receiver) }
 }
+

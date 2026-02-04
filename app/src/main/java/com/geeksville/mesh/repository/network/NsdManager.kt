@@ -154,3 +154,4 @@ private suspend fun NsdManager.resolveService(serviceInfo: NsdServiceInfo): NsdS
             resolveService(serviceInfo, listener)
         }
     }
+

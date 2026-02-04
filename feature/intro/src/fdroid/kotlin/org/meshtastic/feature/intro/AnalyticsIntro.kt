@@ -23,3 +23,4 @@ import androidx.compose.runtime.Composable
 fun AnalyticsIntro() {
     // no-op for fdroid
 }
+

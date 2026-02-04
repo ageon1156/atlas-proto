@@ -136,3 +136,4 @@ sealed class BleError(val message: String, val shouldReconnect: Boolean) {
         }
     }
 }
+

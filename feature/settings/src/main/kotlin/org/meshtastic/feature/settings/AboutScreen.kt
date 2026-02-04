@@ -78,3 +78,4 @@ fun AboutScreen(onNavigateUp: () -> Unit) {
 fun AboutScreenPreview() {
     MaterialTheme { AboutScreen(onNavigateUp = {}) }
 }
+

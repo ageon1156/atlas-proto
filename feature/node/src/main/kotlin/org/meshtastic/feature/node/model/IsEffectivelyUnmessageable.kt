@@ -27,3 +27,4 @@ val Node.isEffectivelyUnmessageable: Boolean
         } else {
             user.role?.isUnmessageableRole() == true
         }
+

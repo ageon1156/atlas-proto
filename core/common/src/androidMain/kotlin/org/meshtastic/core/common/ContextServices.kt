@@ -73,3 +73,4 @@ fun Context.hasLocationPermission(): Boolean {
     val perms = listOf(Manifest.permission.ACCESS_FINE_LOCATION)
     return perms.all { ContextCompat.checkSelfPermission(this, it) == PackageManager.PERMISSION_GRANTED }
 }
+

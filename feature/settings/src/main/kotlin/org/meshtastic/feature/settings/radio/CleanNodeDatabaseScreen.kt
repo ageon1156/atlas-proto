@@ -204,3 +204,4 @@ private fun ConfirmationDialog(nodesToDeleteCount: Int, onConfirm: () -> Unit, o
         dismissButton = { TextButton(onClick = onDismiss) { Text(stringResource(Res.string.cancel)) } },
     )
 }
+

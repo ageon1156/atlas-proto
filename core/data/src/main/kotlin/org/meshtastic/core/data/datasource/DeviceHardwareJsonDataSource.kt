@@ -40,3 +40,4 @@ class DeviceHardwareJsonDataSource @Inject constructor(private val application: 
             json.decodeFromStream<List<NetworkDeviceHardware>>(inputStream)
         }
 }
+

@@ -46,3 +46,4 @@ abstract class RadioRepositoryModule {
     @[Binds IntoMap InterfaceMapKey(InterfaceId.TCP)]
     abstract fun bindTCPInterfaceSpec(spec: TCPInterfaceSpec): @JvmSuppressWildcards InterfaceSpec<*>
 }
+

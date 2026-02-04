@@ -135,3 +135,4 @@ constructor(
         private const val MIN_UPDATE_INTERVAL_MS = 1_000L
     }
 }
+

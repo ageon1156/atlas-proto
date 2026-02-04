@@ -61,3 +61,4 @@ sealed interface FirmwareUpdateState {
     data class AwaitingFileSave(val uf2File: File?, val fileName: String, val sourceUri: Uri? = null) :
         FirmwareUpdateState
 }
+

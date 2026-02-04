@@ -25,3 +25,4 @@ import org.meshtastic.core.database.model.Node
 internal fun InlineMap(node: Node, modifier: Modifier = Modifier) {
     // No-op for F-Droid builds
 }
+

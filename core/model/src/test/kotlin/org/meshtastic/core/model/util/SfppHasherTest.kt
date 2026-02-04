@@ -93,3 +93,4 @@ class SfppHasherTest {
         if (any == null) throw AssertionError("Should not be null")
     }
 }
+

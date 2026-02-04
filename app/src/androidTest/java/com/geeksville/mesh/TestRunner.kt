@@ -28,3 +28,4 @@ class TestRunner : AndroidJUnitRunner() {
         return super.newApplication(cl, HiltTestApplication::class.java.name, context)
     }
 }
+

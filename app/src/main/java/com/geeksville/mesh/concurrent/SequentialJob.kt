@@ -49,3 +49,4 @@ class SequentialJob @Inject constructor() {
         job.getAndSet(null)?.cancel()
     }
 }
+

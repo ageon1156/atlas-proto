@@ -10,14 +10,14 @@ concurrency:
 
 jobs:
   lint:
-    if: github.repository == 'meshtastic/Meshtastic-Android'
+    if: 
     uses: ./.github/workflows/reusable-lint.yml
     secrets:
       GRADLE_ENCRYPTION_KEY: ${{ secrets.GRADLE_ENCRYPTION_KEY }}
 
   build:
     needs: lint
-    if: github.repository == 'meshtastic/Meshtastic-Android'
+    if: 
     uses: ./.github/workflows/reusable-android-build.yml
     with:
       upload_artifacts: false
@@ -29,7 +29,7 @@ jobs:
 
   androidTest:
     needs: lint
-    if: github.repository == 'meshtastic/Meshtastic-Android'
+    if: 
     uses: ./.github/workflows/reusable-android-test.yml
     with:
       api_levels: '[26, 35]' # Run on both API 26 and 35 for merge queue
@@ -59,3 +59,4 @@ jobs:
           exit_on_result "lint" "${{ needs.lint.result }}"
           exit_on_result "build" "${{ needs.build.result }}"
           exit_on_result "androidTest" "${{ needs.androidTest.result }}"
+

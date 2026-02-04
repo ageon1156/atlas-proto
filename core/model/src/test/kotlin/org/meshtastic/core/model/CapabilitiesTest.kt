@@ -108,3 +108,4 @@ class CapabilitiesTest {
         assertTrue(c.supportsQrCodeSharing)
     }
 }
+

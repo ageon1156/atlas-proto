@@ -182,3 +182,4 @@ val MeshtasticIcons.BatteryUnknown: ImageVector
     }
 
 private var batteryUnknown: ImageVector? = null
+

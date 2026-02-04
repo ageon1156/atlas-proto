@@ -108,3 +108,4 @@ val MeshtasticIcons.Map: ImageVector
     }
 
 private var map: ImageVector? = null
+

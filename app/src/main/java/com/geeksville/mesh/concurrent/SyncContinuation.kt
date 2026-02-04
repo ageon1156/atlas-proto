@@ -92,3 +92,4 @@ fun <T> suspend(timeoutMsecs: Long = -1, initfn: (SyncContinuation<T>) -> Unit):
     // Now wait for the continuation to finish
     return cont.await(timeoutMsecs)
 }
+

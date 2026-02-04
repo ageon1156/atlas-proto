@@ -252,3 +252,4 @@ constructor(
         return Math.toDegrees(radians).toFloat().coerceIn(0f, FULL_CIRCLE_DEGREES / 2)
     }
 }
+

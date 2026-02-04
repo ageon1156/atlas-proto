@@ -47,3 +47,4 @@ fun List<DeviceListEntry>.DeviceListSection(
         }
     }
 }
+

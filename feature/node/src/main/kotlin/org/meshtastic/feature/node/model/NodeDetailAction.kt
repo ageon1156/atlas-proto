@@ -35,3 +35,4 @@ sealed interface NodeDetailAction {
     // Opens the compass sheet scoped to a target node and the user’s preferred units.
     data class OpenCompass(val node: Node, val displayUnits: DisplayUnits) : NodeDetailAction
 }
+

@@ -20,45 +20,31 @@ package org.meshtastic.feature.settings.navigation
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.Forward
 import androidx.compose.material.icons.automirrored.filled.Message
-import androidx.compose.material.icons.automirrored.filled.VolumeUp
-import androidx.compose.material.icons.filled.Cloud
-import androidx.compose.material.icons.filled.DataUsage
-import androidx.compose.material.icons.filled.LightMode
 import androidx.compose.material.icons.filled.Notifications
-import androidx.compose.material.icons.filled.People
-import androidx.compose.material.icons.filled.PermScanWifi
-import androidx.compose.material.icons.filled.Sensors
-import androidx.compose.material.icons.filled.SettingsRemote
-import androidx.compose.material.icons.filled.Speed
 import androidx.compose.material.icons.filled.Usb
 import androidx.compose.ui.graphics.vector.ImageVector
 import org.jetbrains.compose.resources.StringResource
 import org.meshtastic.core.navigation.Route
 import org.meshtastic.core.navigation.SettingsRoutes
 import org.meshtastic.core.strings.Res
-import org.meshtastic.core.strings.ambient_lighting
-import org.meshtastic.core.strings.audio
 import org.meshtastic.core.strings.canned_message
-import org.meshtastic.core.strings.detection_sensor
 import org.meshtastic.core.strings.external_notification
-import org.meshtastic.core.strings.mqtt
-import org.meshtastic.core.strings.neighbor_info
-import org.meshtastic.core.strings.paxcounter
-import org.meshtastic.core.strings.range_test
-import org.meshtastic.core.strings.remote_hardware
 import org.meshtastic.core.strings.serial
 import org.meshtastic.core.strings.store_forward
-import org.meshtastic.core.strings.telemetry
 import org.meshtastic.proto.AdminProtos
 import org.meshtastic.proto.MeshProtos.DeviceMetadata
 
+/**
+ * Module configuration routes for Meshtastic radio modules.
+ *
+ * Removed for emergency app streamlining:
+ * - MQTT, Range Test, Telemetry, Audio, Remote Hardware
+ * - Neighbor Info, Ambient Lighting, Detection Sensor, Paxcounter
+ *
+ * Kept for core functionality:
+ * - SERIAL, EXT_NOTIFICATION, STORE_FORWARD, CANNED_MESSAGE
+ */
 enum class ModuleRoute(val title: StringResource, val route: Route, val icon: ImageVector?, val type: Int = 0) {
-    MQTT(
-        Res.string.mqtt,
-        SettingsRoutes.MQTT,
-        Icons.Default.Cloud,
-        AdminProtos.AdminMessage.ModuleConfigType.MQTT_CONFIG_VALUE,
-    ),
     SERIAL(
         Res.string.serial,
         SettingsRoutes.Serial,
@@ -77,59 +63,11 @@ enum class ModuleRoute(val title: StringResource, val route: Route, val icon: Im
         Icons.AutoMirrored.Default.Forward,
         AdminProtos.AdminMessage.ModuleConfigType.STOREFORWARD_CONFIG_VALUE,
     ),
-    RANGE_TEST(
-        Res.string.range_test,
-        SettingsRoutes.RangeTest,
-        Icons.Default.Speed,
-        AdminProtos.AdminMessage.ModuleConfigType.RANGETEST_CONFIG_VALUE,
-    ),
-    TELEMETRY(
-        Res.string.telemetry,
-        SettingsRoutes.Telemetry,
-        Icons.Default.DataUsage,
-        AdminProtos.AdminMessage.ModuleConfigType.TELEMETRY_CONFIG_VALUE,
-    ),
     CANNED_MESSAGE(
         Res.string.canned_message,
         SettingsRoutes.CannedMessage,
         Icons.AutoMirrored.Default.Message,
         AdminProtos.AdminMessage.ModuleConfigType.CANNEDMSG_CONFIG_VALUE,
-    ),
-    AUDIO(
-        Res.string.audio,
-        SettingsRoutes.Audio,
-        Icons.AutoMirrored.Default.VolumeUp,
-        AdminProtos.AdminMessage.ModuleConfigType.AUDIO_CONFIG_VALUE,
-    ),
-    REMOTE_HARDWARE(
-        Res.string.remote_hardware,
-        SettingsRoutes.RemoteHardware,
-        Icons.Default.SettingsRemote,
-        AdminProtos.AdminMessage.ModuleConfigType.REMOTEHARDWARE_CONFIG_VALUE,
-    ),
-    NEIGHBOR_INFO(
-        Res.string.neighbor_info,
-        SettingsRoutes.NeighborInfo,
-        Icons.Default.People,
-        AdminProtos.AdminMessage.ModuleConfigType.NEIGHBORINFO_CONFIG_VALUE,
-    ),
-    AMBIENT_LIGHTING(
-        Res.string.ambient_lighting,
-        SettingsRoutes.AmbientLighting,
-        Icons.Default.LightMode,
-        AdminProtos.AdminMessage.ModuleConfigType.AMBIENTLIGHTING_CONFIG_VALUE,
-    ),
-    DETECTION_SENSOR(
-        Res.string.detection_sensor,
-        SettingsRoutes.DetectionSensor,
-        Icons.Default.Sensors,
-        AdminProtos.AdminMessage.ModuleConfigType.DETECTIONSENSOR_CONFIG_VALUE,
-    ),
-    PAXCOUNTER(
-        Res.string.paxcounter,
-        SettingsRoutes.Paxcounter,
-        Icons.Default.PermScanWifi,
-        AdminProtos.AdminMessage.ModuleConfigType.PAXCOUNTER_CONFIG_VALUE,
     ),
     ;
 
@@ -145,3 +83,4 @@ enum class ModuleRoute(val title: StringResource, val route: Route, val icon: Im
         }
     }
 }
+

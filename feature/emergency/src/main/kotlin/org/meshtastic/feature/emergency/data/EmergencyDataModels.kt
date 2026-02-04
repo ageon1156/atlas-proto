@@ -26,6 +26,7 @@ data class EmergencyGuideData(
     @SerialName("first_aid") val firstAid: Map<String, FirstAidTopic>,
     @SerialName("disaster_survival") val disasterSurvival: Map<String, DisasterSurvivalTopic>,
     @SerialName("basic_survival") val basicSurvival: Map<String, BasicSurvivalTopic>,
+    @SerialName("emergency_contacts") val emergencyContacts: EmergencyContactsData? = null,
     @SerialName("legal_disclaimers") val legalDisclaimers: LegalDisclaimers,
 )
 
@@ -81,6 +82,26 @@ data class BasicSurvivalTopic(
 )
 
 @Serializable
+data class EmergencyContactsData(
+    @SerialName("primary_emergency") val primaryEmergency: EmergencyContactSection? = null,
+    @SerialName("disaster_management") val disasterManagement: EmergencyContactSection? = null,
+    @SerialName("regional_response") val regionalResponse: EmergencyContactSection? = null,
+)
+
+@Serializable
+data class EmergencyContactSection(
+    val category: String = "",
+    val contacts: List<EmergencyContact> = emptyList(),
+)
+
+@Serializable
+data class EmergencyContact(
+    val service: String = "",
+    val number: String? = null,
+    val numbers: List<String>? = null,
+)
+
+@Serializable
 data class LegalDisclaimers(
     @SerialName("general_disclaimer") val generalDisclaimer: String = "",
     @SerialName("offline_limitation") val offlineLimitation: String = "",
@@ -92,3 +113,4 @@ data class LegalDisclaimers(
     @SerialName("version_note") val versionNote: String = "",
     @SerialName("accessibility_note") val accessibilityNote: String = "",
 )
+

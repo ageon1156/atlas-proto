@@ -337,3 +337,4 @@ private fun LegendPreview() {
         )
     Legend(legendData = data, promptInfoDialog = {})
 }
+

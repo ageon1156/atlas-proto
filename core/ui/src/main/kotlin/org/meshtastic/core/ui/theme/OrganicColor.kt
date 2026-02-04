@@ -191,3 +191,4 @@ val NatureGradient = listOf(Color(0xFFFF6600), Color(0xFF00FF00)) // Orange to L
 val EarthGradient = listOf(Color(0xFFFF00FF), Color(0xFFFFFF00)) // Magenta to Yellow
 val MossGradient = listOf(Color(0xFF00FFFF), Color(0xFFFF1493)) // Cyan to Hot Pink
 val SkyGradient = listOf(Color(0xFFFF4500), Color(0xFF00FF00)) // Orange Red to Lime
+

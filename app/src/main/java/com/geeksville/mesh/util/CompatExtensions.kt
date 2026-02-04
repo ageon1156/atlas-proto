@@ -49,3 +49,4 @@ fun Context.registerReceiverCompat(
 ) {
     ContextCompat.registerReceiver(this, receiver, filter, flag)
 }
+

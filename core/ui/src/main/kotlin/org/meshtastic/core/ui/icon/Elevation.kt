@@ -98,3 +98,4 @@ val MeshtasticIcons.Elevation: ImageVector
     }
 
 private var elevation: ImageVector? = null
+

@@ -70,3 +70,4 @@ class EnvironmentMetricsTest {
         assertEquals(expectedSoilTemperatureFahrenheit, resultTelemetry.environmentMetrics.soilTemperature, 0.01f)
     }
 }
+

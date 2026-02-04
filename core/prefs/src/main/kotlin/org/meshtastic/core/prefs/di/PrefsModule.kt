@@ -174,3 +174,4 @@ interface PrefsModule {
             context.getSharedPreferences("meshlog-prefs", Context.MODE_PRIVATE)
     }
 }
+

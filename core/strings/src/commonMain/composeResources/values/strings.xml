@@ -1,18 +1,5 @@
 <!--
-  ~ Copyright (c) 2025 Meshtastic LLC
-  ~
-  ~ This program is free software: you can redistribute it and/or modify
-  ~ it under the terms of the GNU General Public License as published by
-  ~ the Free Software Foundation, either version 3 of the License, or
-  ~ (at your option) any later version.
-  ~
-  ~ This program is distributed in the hope that it will be useful,
-  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
-  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  ~ GNU General Public License for more details.
-  ~
-  ~ You should have received a copy of the GNU General Public License
-  ~ along with this program.  If not, see <https://www.gnu.org/licenses/>.
+  ~ Licensed under GPL-3.0
   -->
 
 <resources>
@@ -27,9 +14,9 @@
     <string name="some_username" translatable="false">SKH</string>
     <string name="sample_message" translatable="false">hey I found the cache, it is over here next to the big tiger. I'm kinda scared.</string>
 
-    <string name="default_mqtt_address" translatable="false">mqtt.meshtastic.org</string>
+    <string name="default_mqtt_address" translatable="false">mqtt.example.com</string>
 
-    <string name="fallback_node_name">Meshtastic</string>
+    <string name="fallback_node_name">Atlas</string>
     <string name="node_filter_placeholder">Filter</string>
     <string name="desc_node_filter_clear">clear node filter</string>
     <string name="node_filter_title">Filter by</string>
@@ -194,7 +181,7 @@
     <string name="qr_code">QR code</string>
     <string name="unknown_username">Unknown Username</string>
     <string name="send">Send</string>
-    <string name="warning_not_paired">You haven't yet paired a Meshtastic compatible radio with this phone. Please pair a device and set your username.\n\nThis open-source application is in development, if you find problems please post on our forum: https://github.com/orgs/meshtastic/discussions.\n\nFor more information see our web page - www.meshtastic.org.</string>
+    <string name="warning_not_paired">You haven't yet paired a Atlas compatible radio with this phone. Please pair a device and set your username.\n\nThis open-source application is in development, if you find problems please post on our forum: https://example.com.\n\nFor more information see our web page - www.example.com</string>
     <string name="you">You</string>
     <string name="analytics_okay">Allow analytics and crash reporting.</string>
     <string name="accept">Accept</string>
@@ -205,7 +192,7 @@
     <string name="permission_missing">Atlas needs location permissions enabled to find new devices via Bluetooth. You can disable when not in use.</string>
     <string name="report_bug">Report Bug</string>
     <string name="report_a_bug">Report a bug</string>
-    <string name="report_bug_text">Are you sure you want to report a bug? After reporting, please post in https://github.com/orgs/meshtastic/discussions so we can match up the report with what you found.</string>
+    <string name="report_bug_text">Are you sure you want to report a bug? After reporting, please post in https://example.com so we can match up the report with what you found.</string>
     <string name="report">Report</string>
     <string name="pairing_completed">Pairing completed, starting service</string>
     <string name="pairing_failed_try_again">Pairing failed, please select again</string>
@@ -227,7 +214,7 @@
     <string name="no_device_selected">No device selected</string>
     <string name="connected_sleeping">Connected to radio, but it is sleeping</string>
     <string name="app_too_old">Application update required</string>
-    <string name="must_update">You must update this application on the app store (or Github). It is too old to talk to this radio firmware.  Please read our <a href="https://meshtastic.org/docs/software/android/installation">docs</a> on this topic.</string>
+    <string name="must_update">You must update this application on the app store (or Github). It is too old to talk to this radio firmware.  Please read our <a href="https://example.com">docs</a> on this topic.</string>
     <string name="none">None (disable)</string>
     <string name="meshtastic_service_notifications">Service notifications</string>
     <string name="acknowledgements">Acknowledgements</string>
@@ -275,7 +262,7 @@
     <string name="meshtastic_waypoints_notifications">Waypoint notifications</string>
     <string name="meshtastic_alerts_notifications">Alert notifications</string>
     <string name="firmware_too_old">Firmware update required.</string>
-    <string name="firmware_old">The radio firmware is too old to talk to this application. For more information on this see <a href="https://meshtastic.org/docs/getting-started/flashing-firmware">our Firmware Installation guide</a>.</string>
+    <string name="firmware_old">The radio firmware is too old to talk to this application. For more information on this see <a href="https://example.com">our Firmware Installation guide</a>.</string>
     <string name="okay">OK</string>
     <string name="must_set_region">You must set a region!</string>
     <string name="cant_change_no_radio">Couldn't change channel, because radio is not yet connected. Please try again.</string>
@@ -415,7 +402,7 @@
     <string name="meshtastic_new_nodes_notifications">New node notifications</string>
     <string name="more_details">More details</string>
     <string name="snr">SNR</string>
-    <string name="snr_definition">Signal-to-Noise Ratio, a measure used in communications to quantify the level of a desired signal to the level of background noise. In Meshtastic and other wireless systems, a higher SNR indicates a clearer signal that can enhance the reliability and quality of data transmission.</string>
+    <string name="snr_definition">Signal-to-Noise Ratio, a measure used in communications to quantify the level of a desired signal to the level of background noise. In Atlas and other wireless systems, a higher SNR indicates a clearer signal that can enhance the reliability and quality of data transmission.</string>
     <string name="rssi">RSSI</string>
     <string name="rssi_definition">Received Signal Strength Indicator, a measurement used to determine the power level being received by the antenna. A higher RSSI value generally indicates a stronger and more stable connection.</string>
     <string name="iaq_definition">(Indoor Air Quality) relative scale IAQ value as measured by Bosch BME680. Value Range 0–500.</string>
@@ -473,7 +460,7 @@
     <string name="current">Current</string>
     <string name="voltage">Voltage</string>
     <string name="are_you_sure">Are you sure?</string>
-    <string name="router_role_confirmation_text"><![CDATA[I have read the <a href="https://meshtastic.org/docs/configuration/radio/device/#roles">Device Role Documentation</a> and the blog post about <a href="http://meshtastic.org/blog/choosing-the-right-device-role">Choosing The Right Device Role</a>.]]></string>
+    <string name="router_role_confirmation_text"><![CDATA[I have read the <a href="https://example.com">Device Role Documentation</a> and the blog post about <a href="http://example.com">Choosing The Right Device Role</a>.]]></string>
     <string name="i_know_what_i_m_doing">I know what I'm doing.</string>
     <string name="low_battery_message">Node %1$s has a low battery (%2$d%%)</string>
     <string name="meshtastic_low_battery_notifications">Low battery notifications</string>
@@ -737,7 +724,7 @@
     <string name="short_name">Short Name</string>
     <string name="hardware_model">Hardware model</string>
     <string name="licensed_amateur_radio">Licensed amateur radio (HAM)</string>
-    <string name="licensed_amateur_radio_text">Enabling this option disables encryption and is not compatible with the default Meshtastic network.</string>
+    <string name="licensed_amateur_radio_text">Enabling this option disables encryption and is not compatible with the default Atlas network.</string>
     <string name="dew_point">Dew Point</string>
     <string name="pressure">Pressure</string>
     <string name="gas_resistance">Gas Resistance</string>
@@ -1016,7 +1003,7 @@
     <string name="firebase_link" translatable="false">Firebase https://firebase.google.com/</string>
     <string name="datadog_link" translatable="false">Datadog  https://www.datadoghq.com/</string>
     <string name="for_more_information_see_our_privacy_policy">For more information, see our privacy policy.</string>
-    <string name="privacy_url" translatable="false">" https://meshtastic.org/docs/legal/privacy/"</string>
+    <string name="privacy_url" translatable="false">" https://example.com"</string>
     <string name="unset">Unset - 0</string>
     <string name="relayed_by">Relayed by: %1$s</string>
     <plurals name="relays">
@@ -1189,3 +1176,4 @@
     <string name="sos_tap_to_retry">Tap to send again</string>
     <string name="sos_last_sent">Last SOS sent: %1$s</string>
 </resources>
+

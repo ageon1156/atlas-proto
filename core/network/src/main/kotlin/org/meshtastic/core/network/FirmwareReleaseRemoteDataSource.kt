@@ -31,3 +31,4 @@ constructor(
     suspend fun getFirmwareReleases(): NetworkFirmwareReleases =
         withContext(dispatchers.io) { apiService.getFirmwareReleases() }
 }
+

@@ -82,3 +82,4 @@ private fun Spannable.toAnnotatedString(linkStyles: TextLinkStyles): AnnotatedSt
 private fun AutoLinkTextPreview() {
     AutoLinkText("A text containing a link https://example.com")
 }
+

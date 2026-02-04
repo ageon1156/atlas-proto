@@ -75,3 +75,4 @@ class UiPrefsImpl @Inject constructor(@UiSharedPreferences private val prefs: Sh
 
     private fun provideLocationKey(nodeNum: Int) = "provide-location-$nodeNum"
 }
+

@@ -61,3 +61,4 @@ jobs:
           else
             echo "No tag found. Skipping changelog generation."
           fi
+

@@ -45,3 +45,4 @@ fun NavGraphBuilder.emergencyGraph(navController: NavHostController) {
         }
     }
 }
+

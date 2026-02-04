@@ -207,6 +207,32 @@ private fun EmergencyContent(
             )
         }
 
+        // Emergency Contacts section
+        data.emergencyContacts?.let { contacts ->
+            item {
+                Spacer(modifier = Modifier.height(8.dp))
+                SectionHeader(title = "EMERGENCY CONTACTS")
+            }
+
+            contacts.primaryEmergency?.let { section ->
+                item {
+                    EmergencyContactsCard(section = section)
+                }
+            }
+
+            contacts.disasterManagement?.let { section ->
+                item {
+                    EmergencyContactsCard(section = section)
+                }
+            }
+
+            contacts.regionalResponse?.let { section ->
+                item {
+                    EmergencyContactsCard(section = section)
+                }
+            }
+        }
+
         item { Spacer(modifier = Modifier.height(16.dp)) }
     }
 }
@@ -262,3 +288,61 @@ private fun getSurvivalIcon(topicId: String): ImageVector = when (topicId) {
     "hygiene_sanitation" -> Icons.Rounded.Masks
     else -> Icons.Rounded.Forest
 }
+
+@Composable
+private fun EmergencyContactsCard(
+    section: org.meshtastic.feature.emergency.data.EmergencyContactSection,
+) {
+    androidx.compose.foundation.layout.Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .padding(horizontal = 16.dp, vertical = 8.dp)
+    ) {
+        Text(
+            text = section.category,
+            color = Color(0xFFE53935),
+            fontSize = 13.sp,
+            fontWeight = FontWeight.Bold,
+            modifier = Modifier.padding(bottom = 12.dp)
+        )
+
+        section.contacts.forEach { contact ->
+            androidx.compose.foundation.layout.Row(
+                modifier = Modifier
+                    .fillMaxSize()
+                    .padding(vertical = 6.dp),
+                verticalAlignment = Alignment.CenterVertically
+            ) {
+                Text(
+                    text = contact.service,
+                    color = Color(0xFFE0E0E0),
+                    fontSize = 14.sp,
+                    modifier = Modifier.weight(1f)
+                )
+
+                if (contact.number != null) {
+                    Text(
+                        text = contact.number,
+                        color = Color(0xFF90CAF9),
+                        fontSize = 15.sp,
+                        fontWeight = FontWeight.Bold
+                    )
+                } else if (contact.numbers != null) {
+                    androidx.compose.foundation.layout.Column(
+                        horizontalAlignment = Alignment.End
+                    ) {
+                        contact.numbers.forEach { number ->
+                            Text(
+                                text = number,
+                                color = Color(0xFF90CAF9),
+                                fontSize = 15.sp,
+                                fontWeight = FontWeight.Bold
+                            )
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

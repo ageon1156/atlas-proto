@@ -43,3 +43,4 @@ data class TracerouteNodePositionEntity(
     @ColumnInfo(name = "node_num") val nodeNum: Int,
     @ColumnInfo(name = "position", typeAffinity = ColumnInfo.BLOB) val position: MeshProtos.Position,
 )
+

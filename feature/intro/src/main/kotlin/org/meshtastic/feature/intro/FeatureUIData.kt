@@ -32,3 +32,4 @@ internal data class FeatureUIData(
     val titleRes: StringResource? = null,
     val subtitleRes: StringResource,
 )
+

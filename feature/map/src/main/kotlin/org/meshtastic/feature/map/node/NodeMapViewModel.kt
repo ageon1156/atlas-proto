@@ -76,3 +76,4 @@ constructor(
     val tileSource
         get() = CustomTileSource.getTileSource(mapPrefs.mapStyle)
 }
+

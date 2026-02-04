@@ -40,3 +40,4 @@ interface GoogleDataModule {
         fun provideJson(): Json = Json { prettyPrint = false }
     }
 }
+

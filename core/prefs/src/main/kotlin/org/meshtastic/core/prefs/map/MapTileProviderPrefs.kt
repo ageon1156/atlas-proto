@@ -32,3 +32,4 @@ class MapTileProviderPrefsImpl @Inject constructor(@MapTileProviderSharedPrefere
     MapTileProviderPrefs {
     override var customTileProviders: String? by NullableStringPrefDelegate(prefs, "custom_tile_providers", null)
 }
+

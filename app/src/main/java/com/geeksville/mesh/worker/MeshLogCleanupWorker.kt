@@ -92,3 +92,4 @@ interface WorkerEntryPoint {
 
     fun meshLogPrefs(): MeshLogPrefs
 }
+

@@ -37,3 +37,4 @@ class DoublePrefDelegate(
             .apply() // SharedPreferences doesn't have putDouble, so convert to float
     }
 }
+

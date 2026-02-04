@@ -8,7 +8,7 @@ on:
 jobs:
   update_assets:
     runs-on: ubuntu-latest
-    if: github.repository == 'meshtastic/Meshtastic-Android'
+    if: 
     permissions:
       contents: write      # To commit files and push branches
       pull-requests: write # To create pull requests
@@ -25,7 +25,7 @@ jobs:
           temp_firmware_file="/tmp/new_firmware_releases.json"
           
           echo "Fetching latest firmware releases..."
-          curl -s --fail https://api.meshtastic.org/github/firmware/list > "$temp_firmware_file"
+          curl -s --fail https://api.example.com/github/firmware/list > "$temp_firmware_file"
           
           if ! jq empty "$temp_firmware_file" 2>/dev/null; then
             echo "::error::Firmware API returned invalid JSON data. Skipping firmware update."
@@ -44,7 +44,7 @@ jobs:
           temp_hardware_file="/tmp/new_device_hardware.json"
 
           echo "Fetching latest device hardware data..."
-          curl -s --fail https://api.meshtastic.org/resource/deviceHardware > "$temp_hardware_file"
+          curl -s --fail https://api.example.com/resource/deviceHardware > "$temp_hardware_file"
 
           if ! jq empty "$temp_hardware_file" 2>/dev/null; then
             echo "::error::Hardware API returned invalid JSON data. Skipping hardware update."
@@ -60,7 +60,7 @@ jobs:
       - name: Sync with Crowdin
         uses: crowdin/github-action@v2
         with:
-          base_url: 'https://meshtastic.crowdin.com/api/v2'
+          base_url: 'https://example.crowdin.com/api/v2'
           config: 'crowdin.yml'
           crowdin_branch_name: 'main'
           upload_sources: true
@@ -116,8 +116,8 @@ jobs:
           body: |
             This PR includes automated updates from the scheduled workflow:
 
-            - Updated `firmware_releases.json` from the Meshtastic API (if changed).
-            - Updated `device_hardware.json` from the Meshtastic API (if changed).
+            - Updated `firmware_releases.json` from the API (if changed).
+            - Updated `device_hardware.json` from the API (if changed).
             - Source strings were uploaded to Crowdin.
             - Latest translations were downloaded from Crowdin (if available).
             - Updated module dependency graphs in README.md files (if changed).
@@ -144,3 +144,4 @@ jobs:
         run: |
           echo "One of the dependent jobs failed or was cancelled. Failing the workflow."
           exit 1
+

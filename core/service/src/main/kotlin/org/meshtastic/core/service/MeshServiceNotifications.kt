@@ -71,3 +71,4 @@ interface MeshServiceNotifications {
 
     fun clearClientNotification(notification: MeshProtos.ClientNotification)
 }
+

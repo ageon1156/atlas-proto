@@ -297,3 +297,4 @@ private fun formatTopicTitle(topicId: String): String =
         .joinToString(" ") { word ->
             word.replaceFirstChar { it.uppercase() }
         }
+

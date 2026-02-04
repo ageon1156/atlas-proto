@@ -110,3 +110,4 @@ internal class SerialConnectionImpl(
         listener.onConnected()
     }
 }
+

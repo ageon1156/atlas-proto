@@ -29,3 +29,4 @@ fun FixedUpdateIntervals.toDisplayString(): String = if (pluralRes != null && qu
 } else {
     ""
 }
+

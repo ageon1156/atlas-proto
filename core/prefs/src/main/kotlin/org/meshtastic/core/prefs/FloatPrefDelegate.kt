@@ -32,3 +32,4 @@ class FloatPrefDelegate(
         preferences.edit().putFloat(key, value).apply()
     }
 }
+

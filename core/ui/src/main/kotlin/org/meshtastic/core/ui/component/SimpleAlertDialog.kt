@@ -107,3 +107,4 @@ fun SimpleAlertDialog(
 private fun SimpleAlertDialogPreview() {
     AppTheme { SimpleAlertDialog(title = Res.string.message, text = Res.string.sample_message) }
 }
+

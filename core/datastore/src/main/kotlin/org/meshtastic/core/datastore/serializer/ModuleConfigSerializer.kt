@@ -39,3 +39,4 @@ object ModuleConfigSerializer : Serializer<LocalModuleConfig> {
 
     override suspend fun writeTo(t: LocalModuleConfig, output: OutputStream) = t.writeTo(output)
 }
+

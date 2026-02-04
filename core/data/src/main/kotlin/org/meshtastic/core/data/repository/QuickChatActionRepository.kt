@@ -45,3 +45,4 @@ constructor(
         dbManager.currentDb.value.quickChatActionDao().updateActionPosition(uuid, newPos)
     }
 }
+

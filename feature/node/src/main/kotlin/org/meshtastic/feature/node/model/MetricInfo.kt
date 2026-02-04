@@ -34,3 +34,4 @@ internal data class DrawableMetricInfo(
     @DrawableRes val icon: Int,
     val rotateIcon: Float = 0f,
 )
+

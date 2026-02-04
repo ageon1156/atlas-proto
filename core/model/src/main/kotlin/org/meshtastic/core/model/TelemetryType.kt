@@ -24,3 +24,4 @@ enum class TelemetryType {
     POWER,
     LOCAL_STATS,
 }
+

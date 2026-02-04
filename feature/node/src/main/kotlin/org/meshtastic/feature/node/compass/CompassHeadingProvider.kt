@@ -114,3 +114,4 @@ class CompassHeadingProvider @Inject constructor(@ApplicationContext private val
         awaitClose { sensorManager.unregisterListener(listener) }
     }
 }
+

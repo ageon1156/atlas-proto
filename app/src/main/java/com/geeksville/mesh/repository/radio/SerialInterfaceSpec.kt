@@ -55,3 +55,4 @@ class SerialInterfaceSpec @Inject constructor(
         }
     }
 }
+

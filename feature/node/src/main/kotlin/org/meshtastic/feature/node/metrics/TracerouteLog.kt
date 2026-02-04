@@ -396,3 +396,4 @@ private fun TracerouteItemPreview() {
         )
     AppTheme { TracerouteItem(icon = Icons.Default.Group, text = "$time - Direct") }
 }
+

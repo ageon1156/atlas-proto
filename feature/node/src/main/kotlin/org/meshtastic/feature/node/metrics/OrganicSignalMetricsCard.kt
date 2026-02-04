@@ -142,3 +142,4 @@ private fun OrganicSignalMetricChip(
         )
     }
 }
+

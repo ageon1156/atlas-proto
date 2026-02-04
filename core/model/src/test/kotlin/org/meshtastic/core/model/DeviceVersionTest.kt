@@ -30,3 +30,4 @@ class DeviceVersionTest {
         assertEquals(12357, DeviceVersion("1.23.57.abde123").asInt)
     }
 }
+

@@ -242,3 +242,4 @@ private fun ContactItemPreview() {
 
     AppTheme { Column { contactsList.forEach { contact -> ContactItem(contact = contact, selected = false) } } }
 }
+

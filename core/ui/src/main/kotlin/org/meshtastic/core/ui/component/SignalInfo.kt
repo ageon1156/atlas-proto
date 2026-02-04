@@ -139,3 +139,4 @@ fun SignalInfoPreview(@PreviewParameter(NodePreviewParameterProvider::class) nod
 fun SignalInfoSelfPreview(@PreviewParameter(NodePreviewParameterProvider::class) node: Node) {
     AppTheme { SignalInfo(node = node, isThisNode = true) }
 }
+

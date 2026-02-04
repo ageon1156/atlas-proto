@@ -93,3 +93,4 @@ class Esp32OtaUpdateHandlerTest {
         assertEquals("OTA update failed: Read error", (lastState as FirmwareUpdateState.Error).error)
     }
 }
+

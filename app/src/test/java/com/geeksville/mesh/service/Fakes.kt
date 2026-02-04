@@ -123,3 +123,4 @@ class FakeMeshServiceNotifications : MeshServiceNotifications {
 
     override fun clearClientNotification(notification: MeshProtos.ClientNotification) {}
 }
+

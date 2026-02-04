@@ -64,3 +64,4 @@ class NodeInfoTest {
         Assert.assertEquals(node[1].distanceStr(node[3], DisplayUnits.IMPERIAL_VALUE), "364 ft")
     }
 }
+

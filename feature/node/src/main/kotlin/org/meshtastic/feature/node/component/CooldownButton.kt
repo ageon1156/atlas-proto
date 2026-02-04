@@ -208,3 +208,4 @@ private fun TracerouteButtonPreview() {
 private fun TracerouteChipPreview() {
     AppTheme { CooldownChip(text = "Traceroute", leadingIcon = Icons.Default.Route, progress = .6f, onClick = {}) }
 }
+

@@ -269,3 +269,4 @@ private fun SearchDialogPreview() {
 private fun ConfirmDeleteDialogPreview() {
     AppTheme { ConfirmDeleteDialog(fullAddressToDelete = "", onHideDialog = {}, onConfirm = {}) }
 }
+

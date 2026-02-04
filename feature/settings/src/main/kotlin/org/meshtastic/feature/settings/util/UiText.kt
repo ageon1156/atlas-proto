@@ -32,3 +32,4 @@ sealed class UiText {
         is StringResource -> stringResource(resId, *args)
     }
 }
+

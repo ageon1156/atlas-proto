@@ -96,3 +96,4 @@ class BleOtaTransportTest {
         assert(result.isSuccess)
     }
 }
+

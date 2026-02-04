@@ -60,3 +60,4 @@ data class Capabilities(val firmwareVersion: String?, internal val forceEnableAl
     val supportsEsp32Ota: Boolean
         get() = isSupported("2.7.18")
 }
+

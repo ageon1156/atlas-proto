@@ -360,3 +360,4 @@ class BleOtaTransport(private val centralManager: CentralManager, private val ad
         const val RECOMMENDED_CHUNK_SIZE = 512
     }
 }
+

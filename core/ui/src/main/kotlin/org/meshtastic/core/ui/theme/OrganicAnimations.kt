@@ -116,3 +116,4 @@ fun <T> organicTweenGentle() = tween<T>(
     durationMillis = ORGANIC_DURATION_SHORT,
     easing = OrganicGentleEasing
 )
+

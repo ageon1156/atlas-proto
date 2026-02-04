@@ -27,3 +27,4 @@ import androidx.compose.ui.unit.dp
 fun PreferenceDivider() {
     HorizontalDivider(modifier = Modifier.padding(horizontal = 16.dp))
 }
+

@@ -125,3 +125,4 @@ class Converters {
     @TypeConverter
     fun intToMessageStatus(value: Int): MessageStatus = MessageStatus.entries.getOrElse(value) { MessageStatus.UNKNOWN }
 }
+

@@ -248,3 +248,4 @@ sealed interface DfuInternalState {
 
     data class Error(override val address: String, val message: String?) : DfuInternalState
 }
+

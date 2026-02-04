@@ -33,3 +33,4 @@ abstract class GooglePlatformAnalyticsModule {
     @Binds @Singleton
     abstract fun bindPlatformHelper(googlePlatformHelper: GooglePlatformAnalytics): PlatformAnalytics
 }
+

@@ -104,3 +104,4 @@ class PacketHandlerTest {
         // We can't easily check the deferred inside, but we can check if it cleared the internal wait.
     }
 }
+

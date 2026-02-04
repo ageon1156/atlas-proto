@@ -41,3 +41,4 @@ interface FirmwareUpdateHandler {
         firmwareUri: Uri? = null,
     ): File?
 }
+

@@ -33,3 +33,4 @@ data class BootloaderOtaQuirk(
     /** Optional URL pointing to documentation on how to update the bootloader. */
     @SerialName("infoUrl") val infoUrl: String? = null,
 )
+

@@ -841,3 +841,4 @@ private fun offsetPolyline(
         SphericalUtil.computeOffset(point, abs(offsetMeters), perpendicularHeading)
     }
 }
+

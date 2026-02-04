@@ -110,7 +110,6 @@ jobs:
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           report_type: coverage
-          slug: meshtastic/Meshtastic-Android
           files: "**/build/reports/kover/report.xml"
 
       - name: Upload test results to Codecov
@@ -131,3 +130,4 @@ jobs:
             **/build/outputs/androidTest-results/connected/**
             **/build/reports/androidTests/connected/**
           retention-days: 14
+

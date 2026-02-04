@@ -114,11 +114,11 @@ classDef unknown fill:#FFADAD,stroke:#000,stroke-width:2px,color:#000;
 
 ## Firmware Update System
 
-The `:feature:firmware` module provides a unified interface for updating Meshtastic devices across different platforms and connection types.
+The `:feature:firmware` module provides a unified interface for updating Atlas devices across different platforms and connection types.
 
 ### Supported Platforms & Methods
 
-Meshtastic-Android supports three primary firmware update flows:
+Atlas supports three primary firmware update flows:
 
 #### 1. ESP32 Unified OTA (WiFi & BLE)
 Used for modern ESP32 devices (e.g., Heltec V3, T-Beam S3). This method utilizes the **Unified OTA Protocol**, which enables high-speed transfers over TCP (port 3232) or BLE. The BLE transport uses the **Nordic Semiconductor Kotlin-BLE-Library** for architectural consistency with the rest of the application.
@@ -194,3 +194,4 @@ sequenceDiagram
 - `WifiOtaTransport.kt`: Implements the TCP/UDP transport logic for ESP32.
 - `BleOtaTransport.kt`: Implements the BLE transport logic for ESP32 using the Nordic BLE library.
 - `FirmwareRetriever.kt`: Handles downloading and extracting firmware assets (ZIP/BIN/UF2).
+

@@ -272,9 +272,6 @@ fun SettingsScreen(
                 },
                 onNavigate = onNavigate,
             )
-
-            // App Settings section hidden from UI (backend preserved)
-            // All functionality remains in SettingsViewModel and other backend classes
         }
     }
 }
@@ -377,3 +374,4 @@ private fun SettingsDialog(title: String, onDismiss: () -> Unit, content: @Compo
         }
     }
 }
+

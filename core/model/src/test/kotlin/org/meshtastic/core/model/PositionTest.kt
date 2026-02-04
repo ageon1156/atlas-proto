@@ -36,3 +36,4 @@ class PositionTest {
         Assert.assertTrue(position.time != 0)
     }
 }
+

@@ -54,3 +54,4 @@ class MeshtasticDatabaseTest {
             .apply { openHelper.writableDatabase.close() }
     }
 }
+

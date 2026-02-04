@@ -120,3 +120,4 @@ internal fun NotificationsScreen(showNextButton: Boolean, onSkip: () -> Unit, on
         },
     )
 }
+

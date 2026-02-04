@@ -194,3 +194,4 @@ private fun IconDefinitions() {
 private fun PreviewChannelLegendDialog() {
     ChannelLegendDialog(firmwareVersion = DeviceVersion(asString = SECONDARY_CHANNEL_EPOCH)) {}
 }
+

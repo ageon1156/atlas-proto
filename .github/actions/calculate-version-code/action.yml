@@ -17,3 +17,4 @@ runs:
         VERSION_CODE=$((GIT_COMMIT_COUNT + OFFSET))
         echo "Calculated versionCode: $VERSION_CODE (from $GIT_COMMIT_COUNT commits + $OFFSET offset)"
         echo "VERSION_CODE=$VERSION_CODE" >> $GITHUB_OUTPUT
+

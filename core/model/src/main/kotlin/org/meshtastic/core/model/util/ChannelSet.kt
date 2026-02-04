@@ -88,3 +88,4 @@ fun ChannelSet.qrCode(shouldAdd: Boolean): Bitmap? = try {
     Logger.e { "URL was too complex to render as barcode" }
     null
 }
+

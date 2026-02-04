@@ -47,3 +47,4 @@ internal object UnreadUiDefaults {
      */
     const val SCROLL_DEBOUNCE_MILLIS = 3_000L
 }
+

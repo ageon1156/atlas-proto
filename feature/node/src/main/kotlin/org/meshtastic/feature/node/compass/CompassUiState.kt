@@ -47,3 +47,4 @@ data class CompassUiState(
     val displayUnits: DisplayUnits = DisplayUnits.METRIC,
     val targetAltitude: Int? = null,
 )
+

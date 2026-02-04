@@ -74,3 +74,4 @@ constructor(
         nodeManagementActions.setNodeNotes(nodeNum, notes)
     }
 }
+

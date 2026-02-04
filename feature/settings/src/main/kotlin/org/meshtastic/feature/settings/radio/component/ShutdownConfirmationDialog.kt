@@ -112,3 +112,4 @@ private fun ShutdownConfirmationDialogPreview() {
 
     AppTheme { ShutdownConfirmationDialog(title = "Shutdown?", node = mockNode, onDismiss = {}, onConfirm = {}) }
 }
+

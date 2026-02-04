@@ -144,3 +144,4 @@ fun MapView.addPositionMarkers(positions: List<MeshProtos.Position>, onClick: ()
 
     return markers
 }
+

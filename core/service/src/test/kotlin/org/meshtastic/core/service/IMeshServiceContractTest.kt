@@ -35,3 +35,4 @@ class IMeshServiceContractTest {
         assertNotNull(service.nodes)
     }
 }
+

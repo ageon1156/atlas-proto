@@ -26,3 +26,4 @@ data class CustomTileProviderConfig(
     val name: String,
     val urlTemplate: String,
 )
+

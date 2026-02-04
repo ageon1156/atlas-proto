@@ -651,3 +651,4 @@ private fun rememberVisiblePlaceholders(
         channelPlaceholders.filter { placeholder -> !contactKeys.contains(placeholder.contactKey) }
     }
 }
+

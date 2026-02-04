@@ -1125,3 +1125,4 @@ private fun offsetPolyline(
         point.offsetPoint(perpendicularHeading, abs(offsetMeters))
     }
 }
+

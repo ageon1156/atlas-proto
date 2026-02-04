@@ -53,3 +53,4 @@ enum class LogsType(val titleRes: StringResource, val icon: ImageVector, val rou
     HOST(Res.string.host_metrics_log, Icons.Default.Memory, { NodeDetailRoutes.HostMetricsLog(it) }),
     PAX(Res.string.pax_metrics_log, Icons.Default.People, { NodeDetailRoutes.PaxMetrics(it) }),
 }
+

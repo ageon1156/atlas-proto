@@ -38,3 +38,4 @@ class EmergencyJsonDataSource @Inject constructor(
             json.decodeFromStream<EmergencyGuideData>(inputStream)
         }
 }
+

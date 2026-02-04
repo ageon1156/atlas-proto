@@ -56,3 +56,4 @@ class NodeFilterPreferences @Inject constructor(private val uiPreferencesDataSou
         uiPreferencesDataSource.setShowIgnored(!showIgnored.value)
     }
 }
+

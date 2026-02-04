@@ -334,3 +334,4 @@ enum class ChannelOption(val modemPreset: ModemPreset, val labelRes: StringResou
         }
     }
 }
+

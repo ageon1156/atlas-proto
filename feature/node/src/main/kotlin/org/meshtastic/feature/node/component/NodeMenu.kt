@@ -128,3 +128,4 @@ sealed class NodeMenuAction {
 
     data class Share(val node: Node) : NodeMenuAction()
 }
+

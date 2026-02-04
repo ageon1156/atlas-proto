@@ -130,3 +130,4 @@ fun AppIntroductionScreen(onDone: () -> Unit) {
 @Serializable private data object CriticalAlerts : NavKey
 
 @Serializable private data object Location : NavKey
+

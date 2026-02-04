@@ -74,3 +74,4 @@ enum class FirmwareReleaseType {
     ALPHA,
     LOCAL,
 }
+

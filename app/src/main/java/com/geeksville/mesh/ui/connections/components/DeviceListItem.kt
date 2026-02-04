@@ -121,3 +121,4 @@ fun DeviceListItem(
         colors = ListItemDefaults.colors(containerColor = Color.Transparent),
     )
 }
+

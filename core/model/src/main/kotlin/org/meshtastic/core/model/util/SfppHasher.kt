@@ -33,3 +33,4 @@ object SfppHasher {
         return digest.digest().copyOf(HASH_SIZE)
     }
 }
+

@@ -31,3 +31,4 @@ sealed class ResponseState<out T> {
 
     fun isWaiting() = this !is Empty
 }
+

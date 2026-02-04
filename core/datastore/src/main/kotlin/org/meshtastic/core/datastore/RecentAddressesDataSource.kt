@@ -101,3 +101,4 @@ class RecentAddressesDataSource @Inject constructor(private val dataStore: DataS
 }
 
 private const val CACHE_CAPACITY = 3
+

@@ -69,3 +69,4 @@ class ZoneIdExtensionsTest {
         assertEquals("-0:30", formatPosixOffset(ZoneOffset.ofTotalSeconds(30 * 60)))
     }
 }
+

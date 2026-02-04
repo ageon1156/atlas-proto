@@ -28,3 +28,4 @@ class BLEException(message: String) : RadioNotConnectedException(message)
 class BLECharacteristicNotFoundException(message: String) : RadioNotConnectedException(message)
 
 class BLEConnectionClosing(message: String = "BLE connection is closing") : RadioNotConnectedException(message)
+

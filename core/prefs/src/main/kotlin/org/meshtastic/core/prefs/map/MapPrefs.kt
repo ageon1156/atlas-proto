@@ -42,3 +42,4 @@ class MapPrefsImpl @Inject constructor(@MapSharedPreferences prefs: SharedPrefer
     override var lastHeardFilter: Long by PrefDelegate(prefs, "last_heard_filter", 0L)
     override var lastHeardTrackFilter: Long by PrefDelegate(prefs, "last_heard_track_filter", 0L)
 }
+

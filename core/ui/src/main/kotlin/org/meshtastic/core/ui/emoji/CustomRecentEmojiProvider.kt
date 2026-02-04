@@ -50,3 +50,4 @@ class CustomRecentEmojiProvider(
         private const val KEY_VALUE_DELIMITER = "="
     }
 }
+

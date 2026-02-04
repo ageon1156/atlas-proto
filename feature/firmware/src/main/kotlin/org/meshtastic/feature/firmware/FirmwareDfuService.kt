@@ -59,3 +59,4 @@ class FirmwareDfuService : DfuBaseService() {
 
     override fun isDebug(): Boolean = BuildConfig.DEBUG
 }
+

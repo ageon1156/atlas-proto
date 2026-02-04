@@ -41,3 +41,4 @@ interface NodeInfoWriteDataSource {
 
     suspend fun backfillDenormalizedNames()
 }
+

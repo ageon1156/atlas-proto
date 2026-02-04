@@ -47,3 +47,4 @@ constructor(
     suspend fun getByModelAndTarget(hwModel: Int, target: String): DeviceHardwareEntity? =
         withContext(dispatchers.io) { deviceHardwareDao.getByModelAndTarget(hwModel, target) }
 }
+

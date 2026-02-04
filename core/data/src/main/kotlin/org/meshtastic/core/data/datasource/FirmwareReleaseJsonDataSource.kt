@@ -40,3 +40,4 @@ class FirmwareReleaseJsonDataSource @Inject constructor(private val application:
             json.decodeFromStream<NetworkFirmwareReleases>(inputStream)
         }
 }
+

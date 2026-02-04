@@ -145,3 +145,4 @@ class BatteryInfoPreviewParameterProvider : PreviewParameterProvider<Pair<Int?, 
 fun MaterialBatteryInfoPreview(@PreviewParameter(BatteryInfoPreviewParameterProvider::class) info: Pair<Int?, Float?>) {
     AppTheme { MaterialBatteryInfo(level = info.first, voltage = info.second) }
 }
+

@@ -194,21 +194,12 @@ constructor(
     }
 
     override fun setDeviceAttributes(firmwareVersion: String, model: String) {
-        if (!Datadog.isInitialized() || !GlobalRumMonitor.isRegistered()) return
-        GlobalRumMonitor.get().addAttribute("firmware_version", firmwareVersion.extractSemanticVersion())
-        GlobalRumMonitor.get().addAttribute("device_hardware", model)
+        // No-op: Analytics disabled for streamlined emergency app
     }
 
-    @OptIn(ExperimentalTrackingApi::class)
     @Composable
     override fun AddNavigationTrackingEffect(navController: NavHostController) {
-        if (Datadog.isInitialized()) {
-            NavigationViewTrackingEffect(
-                navController = navController,
-                trackArguments = true,
-                destinationPredicate = AcceptAllNavDestinations(),
-            )
-        }
+        // No-op: Analytics disabled for streamlined emergency app
     }
 
     private val isGooglePlayAvailable: Boolean
@@ -221,7 +212,7 @@ constructor(
         get() = Datadog.isInitialized()
 
     override val isPlatformServicesAvailable: Boolean
-        get() = isGooglePlayAvailable && isDatadogAvailable
+        get() = false // Analytics disabled for streamlined emergency app
 
     private class CrashlyticsLogWriter : LogWriter() {
         companion object {
@@ -269,19 +260,7 @@ constructor(
     }
 
     override fun track(event: String, vararg properties: DataPair) {
-        val bundle = Bundle()
-        properties.forEach {
-            when (it.value) {
-                is Double -> bundle.putDouble(it.name, it.value)
-                is Int ->
-                    bundle.putLong(it.name, it.value.toLong()) // Firebase expects Long for integer values in bundles
-                is Long -> bundle.putLong(it.name, it.value)
-                is Float -> bundle.putDouble(it.name, it.value.toDouble())
-                is String -> bundle.putString(it.name, it.value as String?) // Explicitly handle String
-                else -> bundle.putString(it.name, it.value.toString()) // Fallback for other types
-            }
-            KermitLogger.withTag(TAG).d { "Analytics: track $event (${it.name} : ${it.value})" }
-        }
-        Firebase.analytics.logEvent(event, bundle)
+        // No-op: Analytics disabled for streamlined emergency app
     }
 }
+

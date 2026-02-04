@@ -68,3 +68,4 @@ class StoreForwardHistoryRequestTest {
         assertEquals(100, max)
     }
 }
+

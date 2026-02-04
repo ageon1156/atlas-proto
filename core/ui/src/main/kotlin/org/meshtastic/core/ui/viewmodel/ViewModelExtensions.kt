@@ -41,3 +41,4 @@ fun <T> Flow<T>.stateInWhileSubscribed(initialValue: T, stopTimeout: Duration = 
     started = SharingStarted.WhileSubscribed(stopTimeoutMillis = stopTimeout.inWholeMilliseconds),
     initialValue = initialValue,
 )
+

@@ -184,3 +184,4 @@ fun ConfigProtos.Config.DeviceConfig.Role?.isUnmessageableRole(): Boolean = this
         ConfigProtos.Config.DeviceConfig.Role.TRACKER,
         ConfigProtos.Config.DeviceConfig.Role.TAK_TRACKER,
     )
+

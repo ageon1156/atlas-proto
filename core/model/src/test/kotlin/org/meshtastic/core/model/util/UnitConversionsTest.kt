@@ -110,3 +110,4 @@ class UnitConversionsTest {
         assertTrue("Expected NaN for 0% humidity", zeroHumidity.isNaN())
     }
 }
+

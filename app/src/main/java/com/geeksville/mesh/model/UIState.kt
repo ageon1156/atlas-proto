@@ -284,3 +284,4 @@ constructor(
         analytics.AddNavigationTrackingEffect(navController)
     }
 }
+

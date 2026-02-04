@@ -49,3 +49,4 @@ fun SatelliteCountInfo(
 private fun SatelliteCountInfoPreview() {
     AppTheme { SatelliteCountInfo(satCount = 5) }
 }
+

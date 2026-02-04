@@ -1,2 +1,3 @@
 -keep class org.meshtastic.core.model.DataPacket
 -keep class org.meshtastic.core.model.DataPacket$CREATOR
+

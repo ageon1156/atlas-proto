@@ -61,3 +61,4 @@ constructor(
             dao.insertAll(entities)
         }
 }
+

@@ -157,3 +157,4 @@ private fun DeviceHardwareImage(deviceHardware: DeviceHardware, modifier: Modifi
         modifier = modifier.padding(16.dp),
     )
 }
+

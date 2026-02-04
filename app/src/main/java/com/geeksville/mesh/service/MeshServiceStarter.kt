@@ -46,3 +46,4 @@ fun MeshService.Companion.startService(context: Context) {
         context.startForegroundService(intent)
     }
 }
+

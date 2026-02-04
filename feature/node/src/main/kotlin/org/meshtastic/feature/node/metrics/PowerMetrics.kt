@@ -387,3 +387,4 @@ private fun retrieveCurrent(channelSelected: PowerChannel, telemetry: Telemetry)
     PowerChannel.TWO -> telemetry.powerMetrics.ch2Current
     PowerChannel.THREE -> telemetry.powerMetrics.ch3Current
 }
+

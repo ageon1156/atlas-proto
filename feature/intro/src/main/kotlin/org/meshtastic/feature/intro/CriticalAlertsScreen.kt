@@ -78,3 +78,4 @@ internal fun CriticalAlertsScreen(onSkip: () -> Unit, onConfigure: () -> Unit) {
         }
     }
 }
+

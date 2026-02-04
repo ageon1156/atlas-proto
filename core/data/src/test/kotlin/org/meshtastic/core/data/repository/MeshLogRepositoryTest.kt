@@ -119,3 +119,4 @@ class MeshLogRepositoryTest {
         assertEquals(Float.NaN, resultMetrics?.temperature!!, 0.01f)
     }
 }
+

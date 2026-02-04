@@ -42,3 +42,4 @@ object BluetoothRepositoryModule {
     @Singleton
     fun provideSingletonCoroutineScope(): CoroutineScope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
 }
+

@@ -36,3 +36,4 @@ enum class NodeSortOption(val sqlValue: String, val stringRes: StringResource) {
     VIA_MQTT("via_mqtt", Res.string.node_sort_via_mqtt),
     VIA_FAVORITE("via_favorite", Res.string.node_sort_via_favorite),
 }
+

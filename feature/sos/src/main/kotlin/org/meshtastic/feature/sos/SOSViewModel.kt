@@ -108,9 +108,9 @@ class SOSViewModel @Inject constructor(
         _uiState.value = SOSUiState.Ready
     }
 
-    fun getLocationText(): Pair<Double, Double>? {
+    fun getLocationText(): String? {
         val location = getLastKnownLocation() ?: return null
-        return location.latitude to location.longitude
+        return "%.4f, %.4f".format(location.latitude, location.longitude)
     }
 
     @SuppressLint("MissingPermission")
@@ -148,3 +148,4 @@ class SOSViewModel @Inject constructor(
         }
     }
 }
+

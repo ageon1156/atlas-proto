@@ -42,3 +42,4 @@ data class MyNodeInfo(
     val firmwareString: String
         get() = "$model $firmwareVersion"
 }
+

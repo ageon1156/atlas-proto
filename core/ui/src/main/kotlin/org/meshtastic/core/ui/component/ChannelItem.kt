@@ -68,3 +68,4 @@ fun ChannelItem(
 private fun ChannelItemPreview() {
     AppTheme { ChannelItem(index = 0, title = "Medium Fast", enabled = true) {} }
 }
+

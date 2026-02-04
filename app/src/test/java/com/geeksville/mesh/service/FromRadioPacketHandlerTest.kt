@@ -109,3 +109,4 @@ class FromRadioPacketHandlerTest {
         verify { packetHandler.removeResponse(42, false) }
     }
 }
+

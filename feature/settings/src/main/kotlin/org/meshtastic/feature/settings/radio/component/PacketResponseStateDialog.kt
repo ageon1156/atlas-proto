@@ -112,3 +112,4 @@ fun <T> PacketResponseStateDialog(state: ResponseState<T>, onDismiss: () -> Unit
 private fun PacketResponseStateDialogPreview() {
     PacketResponseStateDialog(state = ResponseState.Loading(total = 17, completed = 5))
 }
+

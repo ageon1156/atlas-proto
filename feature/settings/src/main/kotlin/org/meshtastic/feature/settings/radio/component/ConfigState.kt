@@ -68,3 +68,4 @@ class ConfigState<T : MessageLite>(private val initialValue: T) {
 @Composable
 fun <T : MessageLite> rememberConfigState(initialValue: T): ConfigState<T> =
     rememberSaveable(initialValue, saver = ConfigState.saver(initialValue)) { ConfigState(initialValue) }
+

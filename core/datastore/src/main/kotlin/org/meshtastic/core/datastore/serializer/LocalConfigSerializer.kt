@@ -39,3 +39,4 @@ object LocalConfigSerializer : Serializer<LocalConfig> {
 
     override suspend fun writeTo(t: LocalConfig, output: OutputStream) = t.writeTo(output)
 }
+

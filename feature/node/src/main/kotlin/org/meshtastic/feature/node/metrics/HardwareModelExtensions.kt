@@ -37,3 +37,4 @@ fun MeshProtos.HardwareModel.safeNumber(fallbackValue: Int = -1): Int = try {
     Logger.w { "Unknown hardware model enum value: $this, using fallback value: $fallbackValue" }
     fallbackValue
 }
+

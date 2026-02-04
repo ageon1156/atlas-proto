@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  ~ Copyright (c) 2025 Meshtastic LLC
+  ~ Licensed under GPL-3.0
   ~
   ~ This program is free software: you can redistribute it and/or modify
   ~ it under the terms of the GNU General Public License as published by
@@ -101,3 +101,4 @@
         product-id="17413" /> <!-- 0x239A / 0x4405: Adafruit (T-Echo) -->
     <usb-device vendor-id="11914" /> <!-- 0x2E8A / ……: Raspberry Pi -->
 </resources>
+

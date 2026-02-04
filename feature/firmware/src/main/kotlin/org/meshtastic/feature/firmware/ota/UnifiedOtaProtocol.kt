@@ -143,3 +143,4 @@ sealed class OtaProtocolException(message: String, cause: Throwable? = null) : E
 
     class Timeout(message: String) : OtaProtocolException(message)
 }
+

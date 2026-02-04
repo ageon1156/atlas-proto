@@ -70,3 +70,4 @@ class EmergencyViewModel @Inject constructor(
     fun getBasicSurvivalTopic(topicId: String): BasicSurvivalTopic? =
         emergencyRepository.getBasicSurvivalTopic(topicId)
 }
+

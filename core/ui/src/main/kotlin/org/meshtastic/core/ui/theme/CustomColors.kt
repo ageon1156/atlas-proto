@@ -111,3 +111,4 @@ object StatusColors {
 object MessageItemColors {
     val Red = Color(0x4DFF0000)
 }
+

@@ -63,3 +63,4 @@ constructor(
     override suspend fun backfillDenormalizedNames() =
         withContext(dispatchers.io) { dbManager.withDb { it.nodeInfoDao().backfillDenormalizedNames() } }
 }
+

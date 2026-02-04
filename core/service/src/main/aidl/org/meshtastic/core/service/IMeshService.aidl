@@ -190,3 +190,4 @@ interface IMeshService {
     */
     void requestRebootOta(in int requestId, in int destNum, in int mode, in byte []hash);
 }
+

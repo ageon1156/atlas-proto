@@ -32,3 +32,4 @@ class CustomEmojiPrefsImpl @Inject constructor(@CustomEmojiSharedPreferences pre
     CustomEmojiPrefs {
     override var customEmojiFrequency: String? by NullableStringPrefDelegate(prefs, "pref_key_custom_emoji_freq", null)
 }
+

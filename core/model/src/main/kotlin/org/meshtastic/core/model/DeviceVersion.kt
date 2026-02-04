@@ -54,3 +54,4 @@ data class DeviceVersion(val asString: String) : Comparable<DeviceVersion> {
 
     override fun compareTo(other: DeviceVersion): Int = asInt - other.asInt
 }
+

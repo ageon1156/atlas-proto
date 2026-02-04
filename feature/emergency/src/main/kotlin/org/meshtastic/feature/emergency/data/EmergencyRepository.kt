@@ -49,3 +49,4 @@ class EmergencyRepository @Inject constructor(
     fun getBasicSurvivalTopic(id: String): BasicSurvivalTopic? =
         cachedData?.basicSurvival?.get(id)
 }
+

@@ -54,3 +54,4 @@ class MeshLogPrefsImpl @Inject constructor(@MeshLogSharedPreferences private val
             defaultValue = MeshLogPrefs.DEFAULT_LOGGING_ENABLED,
         )
 }
+

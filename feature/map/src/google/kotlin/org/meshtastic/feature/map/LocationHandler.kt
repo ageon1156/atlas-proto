@@ -138,3 +138,4 @@ fun LocationPermissionsHandler(onPermissionResult: (Boolean) -> Unit) {
         }
     }
 }
+

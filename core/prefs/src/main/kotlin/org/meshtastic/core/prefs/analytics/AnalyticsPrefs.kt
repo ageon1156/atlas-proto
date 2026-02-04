@@ -81,3 +81,4 @@ constructor(
         awaitClose { analyticsSharedPreferences.unregisterOnSharedPreferenceChangeListener(listener) }
     }
 }
+

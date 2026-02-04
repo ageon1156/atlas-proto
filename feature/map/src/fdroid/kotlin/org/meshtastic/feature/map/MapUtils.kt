@@ -79,3 +79,4 @@ fun Context.spToPx(sp: Float): Int =
 // Converts DP to pixels.
 fun Context.dpToPx(dp: Float): Int =
     TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, resources.displayMetrics).toInt()
+

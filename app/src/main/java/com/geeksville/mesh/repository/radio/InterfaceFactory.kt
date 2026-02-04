@@ -56,3 +56,4 @@ class InterfaceFactory @Inject constructor(
         return Pair(c, rest)
     }
 }
+

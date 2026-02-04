@@ -58,3 +58,4 @@ class SwitchingNodeInfoReadDataSource @Inject constructor(private val dbManager:
 
     override suspend fun getUnknownNodes(): List<NodeEntity> = dbManager.withDb { it.nodeInfoDao().getUnknownNodes() }
 }
+

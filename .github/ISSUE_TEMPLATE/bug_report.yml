@@ -2,12 +2,12 @@ name: Bug Report
 description: File a bug report.
 title: "[Bug]: "
 labels: [bug]
-projects: [meshtastic/Meshtastic-Android]
+projects: [atlas/Atlas]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for helping to make Meshtastic-Android better by reporting a bug. :hugs:
+        Thank you for helping to make Atlas better by reporting a bug. :hugs:
 
         Please provide as much detail as possible so we can efficiently address your issue and avoid unnecessary back-and-forth.
 
@@ -29,9 +29,9 @@ body:
         Bug reports that do not meet these criteria will be closed.
         Requests that do not meet these criteria will be closed.
         Links:
-          [**OPEN ISSUES**](https://github.com/meshtastic/Meshtastic-Android/issues)
-          [**CLOSED ISSUES**](https://github.com/meshtastic/Meshtastic-Android/issues?q=is%3Aissue+is%3Aclosed)
-          [Contribution Guidelines](https://github.com/meshtastic/Meshtastic-Android/blob/main/README.md#contributing)
+          [**OPEN ISSUES**](https://github.com/atlas/Atlas/issues)
+          [**CLOSED ISSUES**](https://github.com/atlas/Atlas/issues?q=is%3Aissue+is%3Aclosed)
+          [Contribution Guidelines](https://github.com/atlas/Atlas/blob/main/README.md#contributing)
       options:
         - label: |
             I am able to reproduce the bug with the latest version.
@@ -62,7 +62,7 @@ body:
     attributes:
       label: Affected app version
       description: |
-        In which Meshtastic-Android app version did you encounter the bug?
+        In which Atlas app version did you encounter the bug?
         Can be seen on the bottom of the `Settings` screen in the app.
       placeholder: "x.y.z-channel.x (build) flavor"
     validations:
@@ -103,7 +103,7 @@ body:
     attributes:
       label: Affected node firmware version
       placeholder: "x.x.x"
-      description: "Which Meshtastic firmware version did you encounter the bug?"
+      description: "Which Atlas firmware version did you encounter the bug?"
     validations:
       required: true
 

@@ -86,3 +86,4 @@ val MeshtasticIcons.Emergency: ImageVector
     }
 
 private var emergency: ImageVector? = null
+

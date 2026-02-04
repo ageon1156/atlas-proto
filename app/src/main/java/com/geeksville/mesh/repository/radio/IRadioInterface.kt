@@ -28,3 +28,4 @@ interface IRadioInterface : Closeable {
      */
     fun keepAlive() {}
 }
+

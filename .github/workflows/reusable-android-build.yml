@@ -77,7 +77,6 @@ jobs:
         uses: codecov/codecov-action@v5
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
-          slug: meshtastic/Meshtastic-Android
           report_type: coverage
           directory: .
           files: "**/build/reports/kover/report.xml"
@@ -115,3 +114,4 @@ jobs:
             build/reports
             **/build/reports
           retention-days: 14
+

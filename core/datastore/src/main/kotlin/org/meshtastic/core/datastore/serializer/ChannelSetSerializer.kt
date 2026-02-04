@@ -39,3 +39,4 @@ object ChannelSetSerializer : Serializer<ChannelSet> {
 
     override suspend fun writeTo(t: ChannelSet, output: OutputStream) = t.writeTo(output)
 }
+

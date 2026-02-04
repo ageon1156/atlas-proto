@@ -174,3 +174,4 @@ internal fun rememberMapViewWithLifecycle(
     }
     return mapView
 }
+

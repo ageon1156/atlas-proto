@@ -43,3 +43,4 @@ fun AdaptiveTwoPane(first: @Composable ColumnScope.() -> Unit, second: @Composab
             }
         }
     }
+

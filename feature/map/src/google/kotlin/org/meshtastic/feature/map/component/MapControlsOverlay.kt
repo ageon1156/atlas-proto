@@ -146,3 +146,4 @@ private fun CompassButton(onClick: () -> Unit, bearing: Float, isFollowing: Bool
         onClick = onClick,
     )
 }
+

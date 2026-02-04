@@ -1,11 +1,11 @@
-# Meshtastic Android - Agent Guide
+# Atlas - Agent Guide
 
-This file serves as a comprehensive guide for AI agents and developers working on the `Meshtastic-Android` codebase. Use this as your primary reference for understanding the architecture, conventions, and workflows.
+This file serves as a comprehensive guide for AI agents and developers working on the `Atlas` codebase. Use this as your primary reference for understanding the architecture, conventions, and workflows.
 
 ## 1. Project Overview
 
 -   **Type:** Native Android Application (Kotlin).
--   **Purpose:** Client interface for Meshtastic mesh radios.
+-   **Purpose:** Client interface for Atlas mesh radios.
 -   **Architecture:** Modern Android Development (MAD) principles.
     -   **UI:** Jetpack Compose (Material 3).
     -   **State Management:** Unidirectional Data Flow (UDF) with ViewModels, Coroutines, and Flow.
@@ -18,9 +18,9 @@ This file serves as a comprehensive guide for AI agents and developers working o
 | Directory | Description |
 | :--- | :--- |
 | `app/` | Main application module. Contains `MainActivity`, `AppNavigation`, and Hilt entry points. Uses package `com.geeksville.mesh`. |
-| `core/` | Shared library modules. Most code here uses package `org.meshtastic.core.*`. |
+| `core/` | Shared library modules. Most code here uses package `org.atlas.core.*`. |
 | `core/strings/` | **Crucial:** Centralized string resources using Compose Multiplatform Resources. |
-| `feature/` | Feature modules (e.g., `settings`, `map`, `messaging`). Each is a standalone Gradle module. Uses package `org.meshtastic.feature.*`. |
+| `feature/` | Feature modules (e.g., `settings`, `map`, `messaging`). Each is a standalone Gradle module. Uses package `org.atlas.feature.*`. |
 | `build-logic/` | Custom Gradle convention plugins. Defines build logic for the entire project. |
 | `gradle/libs.versions.toml` | **Version Catalog.** All dependencies and versions are defined here. |
 | `core/proto/` | Protobuf definitions for communicating with the mesh radio. |
@@ -36,8 +36,8 @@ This file serves as a comprehensive guide for AI agents and developers working o
     -   **Usage:**
         ```kotlin
         import org.jetbrains.compose.resources.stringResource
-        import org.meshtastic.core.strings.Res
-        import org.meshtastic.core.strings.your_string_key
+        import org.atlas.core.strings.Res
+        import org.atlas.core.strings.your_string_key
 
         Text(text = stringResource(Res.string.your_string_key))
         ```
@@ -57,7 +57,7 @@ This file serves as a comprehensive guide for AI agents and developers working o
 ### D. Dependency Management
 -   **Never** hardcode versions in `build.gradle.kts` files.
 -   **Action:** Add the library and version to `gradle/libs.versions.toml`.
--   **Action:** Apply plugins using the alias from the catalog (e.g., `alias(libs.plugins.meshtastic.android.library)`).
+-   **Action:** Apply plugins using the alias from the catalog (e.g., `alias(libs.plugins.atlas.android.library)`).
 -   **Alpha Libraries:** Do not be shy about using alpha libraries from Google if they provide necessary features.
 
 ### E. Build Variants (Flavors)
@@ -97,13 +97,14 @@ This file serves as a comprehensive guide for AI agents and developers working o
 ## 6. Important Context
 
 -   **Protobuf:** Communication with the device uses Protobufs. The definitions are in `core/proto`. This is a Git submodule, but the build system handles it.
--   **Legacy:** Some code in `app/` uses the `com.geeksville.mesh` package. Newer code in `core/` and `feature/` uses `org.meshtastic.*`. Respect the existing package structure of the file you are editing.
+-   **Legacy:** Some code in `app/` uses the `com.geeksville.mesh` package. Newer code in `core/` and `feature/` uses `org.atlas.*`. Respect the existing package structure of the file you are editing.
 -   **Versioning:** Do not manually edit `versionCode` or `versionName`. These are managed by the build system and CI/CD.
 
 ## 7. Troubleshooting
 
--   **Missing Strings:** If `Res.string.xyz` is unresolved, ensure you have imported `org.meshtastic.core.strings.Res` and the specific string property, and that you have run a build to generate the resources.
+-   **Missing Strings:** If `Res.string.xyz` is unresolved, ensure you have imported `org.atlas.core.strings.Res` and the specific string property, and that you have run a build to generate the resources.
 -   **Build Errors:** Check `gradle/libs.versions.toml` for version conflicts. Use `build-logic` conventions to ensure plugins are applied correctly.
 
 ---
 *Refer to `CONTRIBUTING.md` for human-centric processes like Code of Conduct and Pull Request etiquette.*
+

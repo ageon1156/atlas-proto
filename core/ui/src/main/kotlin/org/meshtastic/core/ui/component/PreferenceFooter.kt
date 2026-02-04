@@ -95,3 +95,4 @@ private fun PreferenceFooterPreview() {
         onPositiveClicked = {},
     )
 }
+

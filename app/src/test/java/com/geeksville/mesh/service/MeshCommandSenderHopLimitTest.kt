@@ -99,3 +99,4 @@ class MeshCommandSenderHopLimitTest {
         assertEquals(7, meshPacketSlot.captured.hopLimit)
     }
 }
+

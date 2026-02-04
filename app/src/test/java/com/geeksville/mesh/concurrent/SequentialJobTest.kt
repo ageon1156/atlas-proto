@@ -79,3 +79,4 @@ class SequentialJobTest {
         assertTrue("Job should be cancelled", jobCancelled)
     }
 }
+

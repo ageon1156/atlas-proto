@@ -105,3 +105,4 @@ fun Float.toSmallDistanceString(system: DisplayUnits): String = if (system == Di
 } else {
     "%.0f mm".format(this)
 }
+

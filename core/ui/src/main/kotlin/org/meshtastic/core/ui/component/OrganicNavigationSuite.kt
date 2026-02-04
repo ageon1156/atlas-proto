@@ -43,3 +43,4 @@ val OrganicNavigationRailShape = RoundedCornerShape(
     topEnd = 28.dp,
     bottomEnd = 28.dp
 )
+

@@ -34,33 +34,23 @@ import org.meshtastic.core.navigation.Route
 import org.meshtastic.core.navigation.SettingsRoutes
 import org.meshtastic.feature.settings.AboutScreen
 import org.meshtastic.feature.settings.SettingsScreen
-import org.meshtastic.feature.settings.debugging.DebugScreen
 import org.meshtastic.feature.settings.navigation.ConfigRoute
 import org.meshtastic.feature.settings.navigation.ModuleRoute
 import org.meshtastic.feature.settings.radio.CleanNodeDatabaseScreen
 import org.meshtastic.feature.settings.radio.RadioConfigViewModel
 import org.meshtastic.feature.settings.radio.channel.ChannelConfigScreen
-import org.meshtastic.feature.settings.radio.component.AmbientLightingConfigScreen
-import org.meshtastic.feature.settings.radio.component.AudioConfigScreen
 import org.meshtastic.feature.settings.radio.component.BluetoothConfigScreen
 import org.meshtastic.feature.settings.radio.component.CannedMessageConfigScreen
-import org.meshtastic.feature.settings.radio.component.DetectionSensorConfigScreen
 import org.meshtastic.feature.settings.radio.component.DeviceConfigScreen
 import org.meshtastic.feature.settings.radio.component.DisplayConfigScreen
 import org.meshtastic.feature.settings.radio.component.ExternalNotificationConfigScreen
 import org.meshtastic.feature.settings.radio.component.LoRaConfigScreen
-import org.meshtastic.feature.settings.radio.component.MQTTConfigScreen
-import org.meshtastic.feature.settings.radio.component.NeighborInfoConfigScreen
 import org.meshtastic.feature.settings.radio.component.NetworkConfigScreen
-import org.meshtastic.feature.settings.radio.component.PaxcounterConfigScreen
 import org.meshtastic.feature.settings.radio.component.PositionConfigScreen
 import org.meshtastic.feature.settings.radio.component.PowerConfigScreen
-import org.meshtastic.feature.settings.radio.component.RangeTestConfigScreen
-import org.meshtastic.feature.settings.radio.component.RemoteHardwareConfigScreen
 import org.meshtastic.feature.settings.radio.component.SecurityConfigScreen
 import org.meshtastic.feature.settings.radio.component.SerialConfigScreen
 import org.meshtastic.feature.settings.radio.component.StoreForwardConfigScreen
-import org.meshtastic.feature.settings.radio.component.TelemetryConfigScreen
 import org.meshtastic.feature.settings.radio.component.UserConfigScreen
 import kotlin.reflect.KClass
 
@@ -131,8 +121,6 @@ fun NavGraphBuilder.settingsGraph(navController: NavHostController) {
                 parentGraphRoute = SettingsRoutes.SettingsGraph::class,
             ) { viewModel ->
                 when (entry) {
-                    ModuleRoute.MQTT -> MQTTConfigScreen(viewModel, onBack = navController::popBackStack)
-
                     ModuleRoute.SERIAL -> SerialConfigScreen(viewModel, onBack = navController::popBackStack)
 
                     ModuleRoute.EXT_NOTIFICATION ->
@@ -141,37 +129,10 @@ fun NavGraphBuilder.settingsGraph(navController: NavHostController) {
                     ModuleRoute.STORE_FORWARD ->
                         StoreForwardConfigScreen(viewModel, onBack = navController::popBackStack)
 
-                    ModuleRoute.RANGE_TEST -> RangeTestConfigScreen(viewModel, onBack = navController::popBackStack)
-
-                    ModuleRoute.TELEMETRY -> TelemetryConfigScreen(viewModel, onBack = navController::popBackStack)
-
                     ModuleRoute.CANNED_MESSAGE ->
                         CannedMessageConfigScreen(viewModel, onBack = navController::popBackStack)
-
-                    ModuleRoute.AUDIO -> AudioConfigScreen(viewModel, onBack = navController::popBackStack)
-
-                    ModuleRoute.REMOTE_HARDWARE ->
-                        RemoteHardwareConfigScreen(viewModel, onBack = navController::popBackStack)
-
-                    ModuleRoute.NEIGHBOR_INFO ->
-                        NeighborInfoConfigScreen(viewModel, onBack = navController::popBackStack)
-
-                    ModuleRoute.AMBIENT_LIGHTING ->
-                        AmbientLightingConfigScreen(viewModel, onBack = navController::popBackStack)
-
-                    ModuleRoute.DETECTION_SENSOR ->
-                        DetectionSensorConfigScreen(viewModel, onBack = navController::popBackStack)
-
-                    ModuleRoute.PAXCOUNTER -> PaxcounterConfigScreen(viewModel, onBack = navController::popBackStack)
                 }
             }
-        }
-
-        composable<SettingsRoutes.DebugPanel>(
-            deepLinks =
-            listOf(navDeepLink<SettingsRoutes.DebugPanel>(basePath = "$DEEP_LINK_BASE_URI/settings/debug_panel")),
-        ) {
-            DebugScreen(onNavigateUp = navController::navigateUp)
         }
 
         composable<SettingsRoutes.About> { AboutScreen(onNavigateUp = navController::navigateUp) }
@@ -196,3 +157,4 @@ fun <R : Route, G : Graph> NavHostController.configComposable(
         content(hiltViewModel(parentEntry))
     }
 }
+

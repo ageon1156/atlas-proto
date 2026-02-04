@@ -35,3 +35,4 @@ object DataModule {
     fun provideLocationManager(@ApplicationContext context: Context): LocationManager =
         context.applicationContext.getSystemService(Context.LOCATION_SERVICE) as LocationManager
 }
+

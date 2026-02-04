@@ -87,3 +87,4 @@ class UnifiedOtaProtocolTest {
         assertEquals("Unknown response: RANDOM_GARBAGE", (response as OtaResponse.Error).message)
     }
 }
+

@@ -181,3 +181,4 @@ fun determineSignalQuality(snr: Float, rssi: Int): Quality = when {
     snr <= SNR_FAIR_THRESHOLD && rssi <= RSSI_FAIR_THRESHOLD -> Quality.NONE
     else -> Quality.BAD
 }
+

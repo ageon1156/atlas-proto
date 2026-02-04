@@ -72,3 +72,4 @@ private enum class Item(val imageVector: ImageVector, val textRes: StringResourc
 private fun ConnectionsSegmentedBarPreview() {
     AppTheme { ConnectionsSegmentedBar(selectedDeviceType = DeviceType.BLE) {} }
 }
+

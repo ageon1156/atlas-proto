@@ -80,3 +80,4 @@ fun TextDividerPreference(
 private fun TextDividerPreferencePreview() {
     TextDividerPreference(title = "Advanced settings")
 }
+

@@ -335,3 +335,4 @@ data class NodeFilterToggles(
     val onToggleShowIgnored: () -> Unit,
     val ignoredNodeCount: Int,
 )
+

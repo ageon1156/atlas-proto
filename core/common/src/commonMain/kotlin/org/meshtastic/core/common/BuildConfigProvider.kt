@@ -26,3 +26,4 @@ interface BuildConfigProvider {
     val absoluteMinFwVersion: String
     val minFwVersion: String
 }
+

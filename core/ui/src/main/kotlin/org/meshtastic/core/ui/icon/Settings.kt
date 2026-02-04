@@ -158,3 +158,4 @@ val MeshtasticIcons.Settings: ImageVector
     }
 
 private var settings: ImageVector? = null
+

@@ -332,3 +332,4 @@ enum class NodeDetailRoute(
         { metricsVM, onNavigateUp -> PaxMetricsScreen(metricsVM, onNavigateUp) },
     ),
 }
+

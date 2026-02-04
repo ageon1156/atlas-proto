@@ -30,3 +30,4 @@ jobs:
             if (!hasRequiredLabel) {
               core.setFailed(`PR must have at least one of the following labels before it can be merged: ${requiredLabels.join(', ')}.`);
             }
+

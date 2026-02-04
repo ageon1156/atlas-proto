@@ -64,3 +64,4 @@ sealed class DeviceListEntry(open val name: String, open val fullAddress: String
 
     data class Mock(override val name: String) : DeviceListEntry(name, "m", true)
 }
+

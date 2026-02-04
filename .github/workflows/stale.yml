@@ -13,7 +13,7 @@ jobs:
   stale_issues:
     name: Close Stale Issues
     runs-on: ubuntu-latest
-    if: github.repository == 'meshtastic/Meshtastic-Android'
+    if: 
 
     steps:
       - name: Stale PR+Issues
@@ -24,3 +24,4 @@ jobs:
           exempt-issue-labels: 'has sponsor,needs sponsor,help wanted,backlog,security issue,l10n,dependencies' 
           exempt-pr-labels: 'has sponsor,needs sponsor,help wanted,backlog,security issue,l10n,dependencies'
           operations-per-run: 100
+

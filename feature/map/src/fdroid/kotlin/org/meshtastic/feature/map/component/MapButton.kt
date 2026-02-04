@@ -60,3 +60,4 @@ fun MapButton(icon: ImageVector, contentDescription: String?, modifier: Modifier
 private fun MapButtonPreview() {
     AppTheme { MapButton(icon = Icons.Outlined.Layers, contentDescription = Res.string.map_style_selection) }
 }
+

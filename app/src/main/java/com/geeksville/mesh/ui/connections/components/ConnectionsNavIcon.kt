@@ -131,3 +131,4 @@ private fun ConnectionsNavIconPreviewConnectionStates(
 private fun ConnectionsNavIconPreviewDeviceTypes(@PreviewParameter(DeviceTypeProvider::class) deviceType: DeviceType) {
     ConnectionsNavIcon(connectionState = ConnectionState.Connected, deviceType = deviceType)
 }
+

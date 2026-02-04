@@ -126,3 +126,4 @@ private fun MainAppBarPreview(@PreviewParameter(BooleanProvider::class) canNavig
         ) {}
     }
 }
+

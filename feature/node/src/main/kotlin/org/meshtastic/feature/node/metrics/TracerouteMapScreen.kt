@@ -180,3 +180,4 @@ private fun LegendRow(color: Color, label: String) {
         Text(text = label, style = MaterialTheme.typography.labelMedium)
     }
 }
+

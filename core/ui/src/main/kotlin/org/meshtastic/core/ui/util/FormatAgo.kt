@@ -52,3 +52,4 @@ fun formatAgo(lastSeenUnixSeconds: Int): String {
             .toString()
     }
 }
+

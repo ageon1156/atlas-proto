@@ -76,3 +76,4 @@ fun DeviceHardwareEntity.asExternalModel() = DeviceHardware(
     supportLevel = supportLevel,
     tags = tags,
 )
+

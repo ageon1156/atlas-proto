@@ -62,3 +62,4 @@ fun EmojiPickerDialog(onDismiss: () -> Unit = {}, onConfirm: (String) -> Unit) =
     BottomSheetDialog(onDismiss = onDismiss, modifier = Modifier.fillMaxHeight(fraction = .4f)) {
         EmojiPicker(onConfirm = onConfirm, onDismiss = onDismiss)
     }
+

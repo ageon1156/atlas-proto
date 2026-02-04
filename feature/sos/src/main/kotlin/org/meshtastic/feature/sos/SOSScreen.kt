@@ -54,7 +54,6 @@ import org.meshtastic.core.strings.sos_cancel
 import org.meshtastic.core.strings.sos_confirm_message
 import org.meshtastic.core.strings.sos_confirm_send
 import org.meshtastic.core.strings.sos_confirm_title
-import org.meshtastic.core.strings.sos_gps_available
 import org.meshtastic.core.strings.sos_gps_unavailable
 import org.meshtastic.core.strings.sos_info_text
 import org.meshtastic.core.strings.sos_last_sent
@@ -120,7 +119,7 @@ private fun SOSContent(
     uiState: SOSUiState,
     connectionState: ConnectionState,
     lastSentTime: Long?,
-    locationInfo: Pair<Double, Double>?,
+    locationInfo: String?,
     onSendSOS: () -> Unit,
     onReset: () -> Unit,
     modifier: Modifier = Modifier,
@@ -248,7 +247,7 @@ private fun SOSContent(
         // GPS status
         Text(
             text = if (locationInfo != null) {
-                stringResource(Res.string.sos_gps_available, locationInfo.first, locationInfo.second)
+                "GPS: $locationInfo"
             } else {
                 stringResource(Res.string.sos_gps_unavailable)
             },
@@ -317,3 +316,4 @@ private fun SOSConfirmationDialog(
         },
     )
 }
+

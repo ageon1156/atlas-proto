@@ -95,15 +95,6 @@ fun RadioConfigItemList(
     onNavigate: (Route) -> Unit,
 ) {
     val enabled = state.connected && !state.responseState.isWaiting() && !isManaged
-    var modules by remember { mutableStateOf(ModuleRoute.filterExcludedFrom(state.metadata)) }
-
-    LaunchedEffect(excludedModulesUnlocked) {
-        if (excludedModulesUnlocked) {
-            modules = ModuleRoute.entries
-        } else {
-            modules = ModuleRoute.filterExcludedFrom(state.metadata)
-        }
-    }
 
     Column {
         TitledCard(title = stringResource(Res.string.radio_configuration)) {
@@ -123,114 +114,7 @@ fun RadioConfigItemList(
                 ListItem(text = stringResource(it.title), leadingIcon = it.icon, enabled = enabled) { onRouteClick(it) }
             }
         }
-
-        // Module Config section hidden from UI (backend preserved)
-        // TitledCard(title = stringResource(Res.string.module_settings), modifier = Modifier.padding(top = 16.dp)) {
-        //     if (isManaged) {
-        //         ManagedMessage()
-        //     }
-        //     modules.forEach {
-        //         ListItem(text = stringResource(it.title), leadingIcon = it.icon, enabled = enabled) { onRouteClick(it) }
-        //     }
-        // }
     }
-
-    // Backup and Restore section hidden from UI (backend preserved)
-    // if (state.isLocal) {
-    //     TitledCard(title = stringResource(Res.string.backup_restore), modifier = Modifier.padding(top = 16.dp)) {
-    //         if (isManaged) {
-    //             ManagedMessage()
-    //         }
-    //         ListItem(
-    //             text = stringResource(Res.string.import_configuration),
-    //             leadingIcon = Icons.Default.Download,
-    //             enabled = enabled,
-    //             onClick = onImport,
-    //         )
-    //         ListItem(
-    //             text = stringResource(Res.string.export_configuration),
-    //             leadingIcon = Icons.Default.Upload,
-    //             enabled = enabled,
-    //             onClick = onExport,
-    //         )
-    //     }
-    // }
-
-    // Administration section hidden from UI (backend preserved)
-    // TitledCard(title = stringResource(Res.string.administration), modifier = Modifier.padding(top = 16.dp)) {
-    //     AdminRoute.entries.forEach { route ->
-    //         var showDialog by remember { mutableStateOf(false) }
-    //         if (showDialog) {
-    //             if (route == AdminRoute.SHUTDOWN || route == AdminRoute.REBOOT) {
-    //                 ShutdownConfirmationDialog(
-    //                     title = "${stringResource(route.title)}?",
-    //                     node = node,
-    //                     onDismiss = { showDialog = false },
-    //                     isShutdown = route == AdminRoute.SHUTDOWN,
-    //                     onConfirm = { onRouteClick(route) },
-    //                 )
-    //             } else {
-    //                 WarningDialog(
-    //                     title = "${stringResource(route.title)}?",
-    //                     text = {
-    //                         if (route == AdminRoute.NODEDB_RESET) {
-    //                             Row(
-    //                                 modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp).fillMaxWidth(),
-    //                                 verticalAlignment = Alignment.CenterVertically,
-    //                                 horizontalArrangement = Arrangement.SpaceBetween,
-    //                             ) {
-    //                                 Text(text = stringResource(Res.string.preserve_favorites))
-    //                                 Switch(
-    //                                     modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
-    //                                     enabled = enabled,
-    //                                     checked = state.nodeDbResetPreserveFavorites,
-    //                                     onCheckedChange = onPreserveFavoritesToggle,
-    //                                 )
-    //                             }
-    //                         }
-    //                     },
-    //                     onDismiss = { showDialog = false },
-    //                     onConfirm = { onRouteClick(route) },
-    //                 )
-    //             }
-    //         }
-    //         ListItem(
-    //             enabled = enabled,
-    //             text = stringResource(route.title),
-    //             leadingIcon = route.icon,
-    //             trailingIcon = null,
-    //         ) {
-    //             showDialog = true
-    //         }
-    //     }
-    // }
-
-    // Advanced section hidden from UI (backend preserved)
-    // TitledCard(title = stringResource(Res.string.advanced_title), modifier = Modifier.padding(top = 16.dp)) {
-    //     if (isManaged) {
-    //         ManagedMessage()
-    //     }
-    //     if (isOtaCapable && state.isLocal) {
-    //         ListItem(
-    //             text = stringResource(Res.string.firmware_update_title),
-    //             leadingIcon = Icons.Rounded.SystemUpdate,
-    //             enabled = enabled,
-    //             onClick = { onNavigate(FirmwareRoutes.FirmwareUpdate) },
-    //         )
-    //     }
-    //     ListItem(
-    //         text = stringResource(Res.string.clean_node_database_title),
-    //         leadingIcon = Icons.Rounded.CleaningServices,
-    //         enabled = enabled,
-    //         onClick = { onNavigate(SettingsRoutes.CleanNodeDb) },
-    //     )
-    //     ListItem(
-    //         text = stringResource(Res.string.debug_panel),
-    //         leadingIcon = Icons.Rounded.BugReport,
-    //         enabled = enabled,
-    //         onClick = { onNavigate(SettingsRoutes.DebugPanel) },
-    //     )
-    // }
 }
 
 enum class AdminRoute(val icon: ImageVector, val title: StringResource) {
@@ -268,3 +152,4 @@ private fun RadioSettingsScreenManagedPreview() = AppTheme {
         onNavigate = { _ -> },
     )
 }
+

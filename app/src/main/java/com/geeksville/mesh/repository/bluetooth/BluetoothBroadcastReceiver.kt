@@ -53,3 +53,4 @@ class BluetoothBroadcastReceiver @Inject constructor(
     private val Intent.bluetoothAdapterState: Int
         get() = getIntExtra(BluetoothAdapter.EXTRA_STATE, -1)
 }
+

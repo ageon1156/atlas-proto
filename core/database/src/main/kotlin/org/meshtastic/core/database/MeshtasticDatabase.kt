@@ -123,3 +123,4 @@ class AutoMigration12to13 : AutoMigrationSpec
 
 @DeleteColumn.Entries(DeleteColumn(tableName = "packet", columnName = "reply_id"))
 class AutoMigration29to30 : AutoMigrationSpec
+

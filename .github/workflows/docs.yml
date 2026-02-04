@@ -24,7 +24,7 @@ concurrency:
 
 jobs:
   build-docs:
-    if: github.repository == 'meshtastic/Meshtastic-Android'
+    if: 
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -51,7 +51,7 @@ jobs:
           path: build/dokka/html
 
   deploy:
-    if: github.repository == 'meshtastic/Meshtastic-Android'
+    if: 
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -61,3 +61,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+

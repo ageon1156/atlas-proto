@@ -29,3 +29,4 @@ fun NavGraphBuilder.firmwareGraph(navController: NavController) {
         composable<FirmwareRoutes.FirmwareUpdate> { FirmwareUpdateScreen(navController) }
     }
 }
+

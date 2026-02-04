@@ -57,3 +57,4 @@ internal fun UsbManager.requestPermission(
 
     awaitClose { context.unregisterReceiver(receiver) }
 }
+

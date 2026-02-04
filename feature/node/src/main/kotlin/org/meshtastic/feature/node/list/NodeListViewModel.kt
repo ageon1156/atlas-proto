@@ -191,3 +191,4 @@ data class NodeFilterToggles(
     val onlyDirect: Boolean = false,
     val showIgnored: Boolean = false,
 )
+

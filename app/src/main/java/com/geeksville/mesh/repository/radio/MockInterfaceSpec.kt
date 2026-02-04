@@ -32,3 +32,4 @@ class MockInterfaceSpec @Inject constructor(
     /** Return true if this address is still acceptable. For BLE that means, still bonded */
     override fun addressValid(rest: String): Boolean = true
 }
+

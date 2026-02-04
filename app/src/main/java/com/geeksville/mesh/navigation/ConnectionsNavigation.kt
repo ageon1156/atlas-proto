@@ -60,3 +60,4 @@ fun NavGraphBuilder.connectionsGraph(navController: NavHostController) {
         }
     }
 }
+

@@ -31,3 +31,4 @@ fun NavGraphBuilder.sosGraph(navController: NavHostController) {
         }
     }
 }
+

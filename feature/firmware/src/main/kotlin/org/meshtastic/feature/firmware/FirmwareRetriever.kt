@@ -119,3 +119,4 @@ class FirmwareRetriever @Inject constructor(private val fileHandler: FirmwareFil
         return url
     }
 }
+

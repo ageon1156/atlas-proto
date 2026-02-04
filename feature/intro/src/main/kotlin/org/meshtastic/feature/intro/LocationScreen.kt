@@ -99,3 +99,4 @@ internal fun LocationScreen(showNextButton: Boolean, onSkip: () -> Unit, onConfi
         },
     )
 }
+

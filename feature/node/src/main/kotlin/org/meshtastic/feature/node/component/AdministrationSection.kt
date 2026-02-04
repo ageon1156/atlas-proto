@@ -223,3 +223,4 @@ private fun DeviceVersion.determineFirmwareStatusColor(
         else -> MaterialTheme.colorScheme.onSurface
     }
 }
+

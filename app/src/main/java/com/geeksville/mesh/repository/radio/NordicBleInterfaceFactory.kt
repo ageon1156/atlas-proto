@@ -24,3 +24,4 @@ import dagger.assisted.AssistedFactory
 interface NordicBleInterfaceFactory {
     fun create(rest: String): NordicBleInterface
 }
+

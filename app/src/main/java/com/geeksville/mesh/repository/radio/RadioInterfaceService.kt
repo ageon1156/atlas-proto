@@ -392,3 +392,4 @@ sealed class MeshActivity {
 
     data object Receive : MeshActivity()
 }
+

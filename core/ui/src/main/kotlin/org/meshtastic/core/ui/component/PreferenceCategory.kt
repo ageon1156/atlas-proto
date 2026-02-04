@@ -59,3 +59,4 @@ fun PreferenceCategory(
 private fun PreferenceCategoryPreview() {
     PreferenceCategory(text = "Advanced settings")
 }
+

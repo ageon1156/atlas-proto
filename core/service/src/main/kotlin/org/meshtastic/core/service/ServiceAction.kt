@@ -34,3 +34,4 @@ sealed class ServiceAction {
 
     data class SendContact(val contact: AdminProtos.SharedContact) : ServiceAction()
 }
+

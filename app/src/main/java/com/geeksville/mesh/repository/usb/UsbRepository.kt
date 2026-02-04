@@ -105,3 +105,4 @@ constructor(
     private suspend fun refreshStateInternal() =
         withContext(dispatchers.default) { _serialDevices.emit(usbManagerLazy.get()?.deviceList ?: emptyMap()) }
 }
+

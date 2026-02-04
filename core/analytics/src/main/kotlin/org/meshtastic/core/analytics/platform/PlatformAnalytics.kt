@@ -50,3 +50,4 @@ interface PlatformAnalytics {
      */
     val isPlatformServicesAvailable: Boolean
 }
+

@@ -123,3 +123,4 @@ class DeviceHardwareRepositoryTest {
         lastUpdated = System.currentTimeMillis(),
     )
 }
+

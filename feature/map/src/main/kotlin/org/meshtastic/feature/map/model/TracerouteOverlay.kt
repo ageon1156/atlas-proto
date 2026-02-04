@@ -27,3 +27,4 @@ data class TracerouteOverlay(
     val hasRoutes: Boolean
         get() = forwardRoute.isNotEmpty() || returnRoute.isNotEmpty()
 }
+

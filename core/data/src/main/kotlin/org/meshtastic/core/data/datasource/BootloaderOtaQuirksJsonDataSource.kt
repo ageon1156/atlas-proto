@@ -37,3 +37,4 @@ class BootloaderOtaQuirksJsonDataSource @Inject constructor(private val applicat
 
     @Serializable private data class ListWrapper(val devices: List<BootloaderOtaQuirk> = emptyList())
 }
+

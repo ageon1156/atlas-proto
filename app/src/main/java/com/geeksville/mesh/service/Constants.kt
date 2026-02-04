@@ -39,3 +39,4 @@ const val EXTRA_PAYLOAD = "$PREFIX.Payload"
 const val EXTRA_NODEINFO = "$PREFIX.NodeInfo"
 const val EXTRA_PACKET_ID = "$PREFIX.PacketId"
 const val EXTRA_STATUS = "$PREFIX.Status"
+

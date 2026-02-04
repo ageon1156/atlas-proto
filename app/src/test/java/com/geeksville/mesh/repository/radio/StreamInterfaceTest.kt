@@ -100,3 +100,4 @@ class StreamInterfaceTest {
         verify(exactly = 0) { service.handleFromRadio(any()) }
     }
 }
+

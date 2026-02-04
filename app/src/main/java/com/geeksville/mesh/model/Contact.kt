@@ -29,3 +29,4 @@ data class Contact(
     val isUnmessageable: Boolean,
     val nodeColors: Pair<Int, Int>? = null,
 )
+

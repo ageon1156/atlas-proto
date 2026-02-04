@@ -290,3 +290,4 @@ class MeshServiceViewModel : ViewModel() {
             getParcelableExtra(key)
         }
 }
+

@@ -149,3 +149,4 @@ val MeshtasticIcons.Device: ImageVector
     }
 
 private var device: ImageVector? = null
+

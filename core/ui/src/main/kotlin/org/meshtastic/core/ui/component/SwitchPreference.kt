@@ -94,3 +94,4 @@ fun SwitchPreference(
 private fun SwitchPreferencePreview() {
     SwitchPreference(title = "Setting", checked = true, enabled = true, onCheckedChange = {})
 }
+

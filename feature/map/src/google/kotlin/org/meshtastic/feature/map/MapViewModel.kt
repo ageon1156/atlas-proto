@@ -558,3 +558,4 @@ data class MapLayerItem(
     var geoJsonLayerData: GeoJsonLayer? = null,
     val layerType: LayerType,
 )
+

@@ -45,3 +45,4 @@ data class DeviceHardware(
     val isEsp32Arc: Boolean
         get() = architecture.startsWith("esp32", ignoreCase = true)
 }
+

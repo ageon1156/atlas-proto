@@ -51,3 +51,4 @@ class GoogleMapsPrefsImpl @Inject constructor(@GoogleMapsSharedPreferences prefs
     override var cameraTilt: Float by FloatPrefDelegate(prefs, "camera_tilt", 0f)
     override var cameraBearing: Float by FloatPrefDelegate(prefs, "camera_bearing", 0f)
 }
+

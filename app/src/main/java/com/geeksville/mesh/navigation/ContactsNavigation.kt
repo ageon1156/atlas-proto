@@ -81,3 +81,4 @@ fun NavGraphBuilder.contactsGraph(navController: NavHostController, scrollToTopE
         QuickChatScreen(onNavigateUp = navController::navigateUp)
     }
 }
+

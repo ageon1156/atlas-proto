@@ -1,6 +1,6 @@
-# Contributing to Meshtastic-Android
+# Contributing
 
-Thank you for your interest in contributing to Meshtastic-Android! We welcome contributions from everyone. Please take a moment to review these guidelines to help us maintain a high-quality, collaborative project.
+Thank you for your interest in contributing! We welcome contributions from everyone. Please take a moment to review these guidelines to help us maintain a high-quality, collaborative project.
 
 ## How to Contribute
 
@@ -19,7 +19,7 @@ Thank you for your interest in contributing to Meshtastic-Android! We welcome co
 - Write clear, descriptive variable and function names.
 - Add comments where necessary, especially for complex logic.
 - Keep methods and classes focused and concise.
-- Use localised strings; edit the English [`strings.xml`](app/src/main/res/values/strings.xml) file. CrowdIn will manage translations to other languages.
+- Use localised strings; edit the English [`strings.xml`](app/src/main/res/values/strings.xml) file.
   - For example,
 
     ```kotlin
@@ -32,7 +32,7 @@ Thank you for your interest in contributing to Meshtastic-Android! We welcome co
 
 ### Linting
 
-Meshtastic-Android uses [Detekt](https://detekt.dev/) for static code analysis and linting of Kotlin code.
+This project uses [Detekt](https://detekt.dev/) for static code analysis and linting of Kotlin code.
 
 - Run `./gradlew detekt` before submitting your pull request to ensure your code passes all lint checks.
 - Fix any Detekt warnings or errors reported in your code.
@@ -43,7 +43,7 @@ Consistent linting helps keep the codebase clean and maintainable.
 
 ### Testing
 
-Meshtastic-Android uses both unit tests and instrumented UI tests to ensure code quality and reliability.
+This project uses both unit tests and instrumented UI tests to ensure code quality and reliability.
 
 - **Unit tests** are located in `app/src/test/java/` and should be written for all new logic where possible.
 - **Instrumented tests** (including UI tests using Jetpack Compose) are located in `app/src/androidTest/java/`. For Compose UI, use the [Jetpack Compose Testing APIs](https://developer.android.com/jetpack/compose/testing).
@@ -54,7 +54,7 @@ Meshtastic-Android uses both unit tests and instrumented UI tests to ensure code
 - Ensure all tests pass by running:
   - `./gradlew test` for unit tests
   - `./gradlew connectedAndroidTest` for instrumented tests
-- For UI components, write Compose UI tests to verify user interactions and visual elements. See existing tests in `DebugFiltersTest.kt` for examples.
+- For UI components, write Compose UI tests to verify user interactions and visual elements.
 - If your change is difficult to test, explain why in your pull request.
 
 Comprehensive testing helps prevent regressions and ensures a stable experience for all users.
@@ -85,7 +85,7 @@ Comprehensive testing helps prevent regressions and ensures a stable experience 
 ## Community Standards
 
 - Be respectful and considerate in all interactions.
-- The Meshtastic Android project is subject to the code of conduct for the parent project, which can be [found here:](https://meshtastic.org/docs/legal/conduct/)
 - Help others by reviewing pull requests and answering questions when possible.
 
-Thank you for helping make Meshtastic-Android better! 
+Thank you for contributing!
+

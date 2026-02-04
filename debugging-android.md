@@ -2,7 +2,7 @@
 
 Oops sorry about that ;-).  Android sends us automated crash reports for some types of failures but not all failures. 
 
-It would be super useful if you could help us by capturing a "logcat" file of the app while it was doing the bad thing and you attach that file to a github [issue](https://github.com/meshtastic/Meshtastic-Android/issues).
+It would be super useful if you could help us by capturing a "logcat" file of the app while it was doing the bad thing and you attach that file to a github [issue](https://github.com/atlas/Atlas/issues).
 
 Here's how to do that...
 
@@ -16,7 +16,7 @@ developer mode on your phone.  The procedure might be slightly different for som
 Say yes and also click the checkbox to always allow your PC access.
 * type "adb devices" at your computer shell prompt, you should see your phone listed.  If you see that ADB is working fine.
 
-* Long press on the meshtastic app and choose "force stop", to ensure that we are starting from scratch for this log (it will make it easier to understand it)
+* Long press on the atlas app and choose "force stop", to ensure that we are starting from scratch for this log (it will make it easier to understand it)
 * If you have a Mac or Linux type:
 ```
 adb shell 'logcat --pid=$(pidof -s com.geeksville.mesh)' | tee newlogfile.txt
@@ -28,7 +28,7 @@ adb shell "logcat --pid=$(pidof -s com.geeksville.mesh)" >newlogfile.txt (I don'
 ```
 
 This will capture a bunch of logging information as you use the app.  Please go through the app to the part that was giving you troubles (No device listed on the settings screen etc).  And then press
-ctrl-c in the adb window to stop logging.  Please open a github [issue](https://github.com/meshtastic/Meshtastic-Android/issues) describing the problem and attach the log file.  We'll get back to you with what we find (possibly with some extra questions).
+ctrl-c in the adb window to stop logging.  Please open a github [issue](https://github.com/atlas/Atlas/issues) describing the problem and attach the log file.  We'll get back to you with what we find (possibly with some extra questions).
 
 ```
 kevinh@kevin-server:~/development$ adb shell 'logcat --pid=$(pidof -s com.geeksville.mesh)' | 

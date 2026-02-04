@@ -301,3 +301,4 @@ interface NodeInfoDao {
     @Query("SELECT * FROM nodes")
     suspend fun getAllNodesSnapshot(): List<NodeEntity>
 }
+

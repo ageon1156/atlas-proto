@@ -396,3 +396,4 @@ sealed class UpdateInterval {
             FixedUpdateIntervals.fromValue(value)?.let { Fixed(it) } ?: Manual(value)
     }
 }
+

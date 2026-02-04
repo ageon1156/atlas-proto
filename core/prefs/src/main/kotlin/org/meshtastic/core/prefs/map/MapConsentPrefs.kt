@@ -38,3 +38,4 @@ class MapConsentPrefsImpl @Inject constructor(@MapConsentSharedPreferences priva
         prefs.edit { putBoolean(nodeNum.toString(), value) }
     }
 }
+

@@ -40,3 +40,4 @@ class UIUnitTest {
         assertEquals("山羊", getInitials("山羊\uD83D\uDC10"))
     }
 }
+

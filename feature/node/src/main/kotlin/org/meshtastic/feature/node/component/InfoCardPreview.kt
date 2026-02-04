@@ -91,3 +91,4 @@ private fun PreviewWindDirectionItem(windDirection: Float, windSpeed: String = "
     val normalizedBearing = (windDirection + 180) % 360
     InfoCard(icon = Icons.Outlined.Navigation, text = "Wind", value = windSpeed, rotateIcon = normalizedBearing)
 }
+

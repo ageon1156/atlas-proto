@@ -33,3 +33,4 @@ suspend fun Context.showToast(stringResource: StringResource, vararg formatArgs:
 suspend fun Context.showToast(text: String) {
     Toast.makeText(this, text, Toast.LENGTH_SHORT).show()
 }
+

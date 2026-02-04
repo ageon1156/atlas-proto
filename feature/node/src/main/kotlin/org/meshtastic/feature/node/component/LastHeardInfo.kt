@@ -50,3 +50,4 @@ fun LastHeardInfo(
 private fun LastHeardInfoPreview() {
     AppTheme { LastHeardInfo(lastHeard = (System.currentTimeMillis() / 1000).toInt() - 8600) }
 }
+

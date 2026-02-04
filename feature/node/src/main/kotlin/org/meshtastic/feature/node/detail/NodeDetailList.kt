@@ -185,25 +185,7 @@ fun NodeDetailList(
             },
         )
 
-        if (metricsState.deviceHardware != null) {
-            DeviceDetailsSection(metricsState)
-        }
-
-        MetricsSection(node, metricsState, availableLogs, onAction)
-
         NotesSection(node = node, onSaveNotes = onSaveNotes)
-
-        if (!metricsState.isManaged) {
-            AdministrationSection(
-                node = node,
-                metricsState = metricsState,
-                onAction = onAction,
-                onFirmwareSelect = { firmware ->
-                    selectedFirmware = firmware
-                    showFirmwareSheet = true
-                },
-            )
-        }
     }
 }
 
@@ -275,3 +257,4 @@ private fun NodeDetailsPreview(@PreviewParameter(NodePreviewParameterProvider::c
         )
     }
 }
+

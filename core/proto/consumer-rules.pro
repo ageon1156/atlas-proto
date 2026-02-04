@@ -4,3 +4,4 @@
 -keep class org.meshtastic.proto.MeshProtos$User
 -keep class org.meshtastic.proto.PaxcountProtos$Paxcount
 -keep class org.meshtastic.proto.TelemetryProtos$Telemetry
+

@@ -23,3 +23,4 @@ import android.content.Context
 fun initializeMaps(context: Context) {
     // No-op for F-Droid
 }
+

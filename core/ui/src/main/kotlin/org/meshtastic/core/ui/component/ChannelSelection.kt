@@ -38,3 +38,4 @@ fun ChannelSelection(
     Spacer(modifier = Modifier.width(10.dp))
     Checkbox(enabled = enabled, checked = isSelected, onCheckedChange = onSelected)
 }
+

@@ -44,3 +44,4 @@ constructor(
     fun addSharedContact(sharedContact: AdminProtos.SharedContact) =
         viewModelScope.launch { serviceRepository.onServiceAction(ServiceAction.ImportContact(sharedContact)) }
 }
+

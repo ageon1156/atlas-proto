@@ -52,3 +52,4 @@ interface GoogleMapsModule {
             context.getSharedPreferences("google_maps_prefs", Context.MODE_PRIVATE)
     }
 }
+

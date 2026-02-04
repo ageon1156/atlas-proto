@@ -11,7 +11,7 @@
       "FEMA Community Preparedness",
       "UK Resuscitation Council"
     ],
-    "disclaimer": "This app is designed for educational guidance only and is not a substitute for professional first aid training or emergency medical services. In case of life-threatening emergency, always contact emergency services (999/112 or local equivalent) immediately. Users provide first aid at their own risk based on their training level.",
+    "disclaimer": "This app is designed for educational guidance only and is not a substitute for professional first aid training or emergency medical services. In case of life-threatening emergency, always contact emergency services (112 or local equivalent) immediately. Users provide first aid at their own risk based on their training level.",
     "target_audience": "Non-medical civilians in disaster/emergency situations",
     "language": "Simple, non-medical English",
     "last_updated": "2026-01-29"
@@ -30,7 +30,7 @@
         { "order": 2, "action": "Apply direct pressure", "details": "Use clean cloth or dressing; press firmly on wound; wear gloves if available" },
         { "order": 3, "action": "Maintain pressure", "details": "Do not remove first cloth; add more cloth/dressing on top if bleeding continues" },
         { "order": 4, "action": "Elevate limb if possible", "details": "Raise injured body part above heart level to slow bleeding" },
-        { "order": 5, "action": "Call emergency services", "details": "Contact 999/112 or local equivalent immediately" }
+        { "order": 5, "action": "Call emergency services", "details": "Contact 112 or local equivalent immediately" }
       ],
       "do": [
         "Wear gloves if available",
@@ -54,7 +54,7 @@
         "Person becomes unresponsive",
         "Signs of shock present (cold, clammy skin; rapid weak pulse; weakness)"
       ],
-      "escalation_action": "Call 999/112 immediately; continue pressure while waiting for help",
+      "escalation_action": "Call 112 immediately; continue pressure while waiting for help",
       "source": "IFRC 2020, Red Cross, St John Ambulance"
     },
     "unconscious_person": {
@@ -67,7 +67,7 @@
       "steps": [
         { "order": 1, "action": "Check scene safety", "details": "Ensure area is safe to approach" },
         { "order": 2, "action": "Shout and tap", "details": "Shout person's name; tap shoulders gently; allow max 10 seconds for response" },
-        { "order": 3, "action": "Call for emergency services", "details": "If unresponsive, immediately get 999/112" },
+        { "order": 3, "action": "Call for emergency services", "details": "If unresponsive, immediately get 112" },
         { "order": 4, "action": "Open airway", "details": "Gently tilt head back, lift chin (unless neck injury suspected)" },
         { "order": 5, "action": "Check breathing", "details": "Listen and feel for breath for maximum 10 seconds" },
         { "order": 6, "action": "Place in recovery position", "details": "If breathing normally, turn onto side to keep airway open; see recovery position section" }
@@ -94,7 +94,7 @@
         "Any signs of shock",
         "Anything blocking airway"
       ],
-      "escalation_action": "Call 999/112 immediately; prepare to perform CPR if not breathing",
+      "escalation_action": "Call 112 immediately; prepare to perform CPR if not breathing",
       "source": "WHO, IFRC 2020, St John Ambulance"
     },
     "cpr_adult": {
@@ -104,7 +104,7 @@
       ],
       "steps": [
         { "order": 1, "action": "Ensure scene safety", "details": "Check for danger to yourself and person" },
-        { "order": 2, "action": "Call emergency services", "details": "Call 999/112 immediately; use speakerphone if alone with person" },
+        { "order": 2, "action": "Call emergency services", "details": "Call 112 immediately; use speakerphone if alone with person" },
         { "order": 3, "action": "Position person", "details": "Lay on back on firm surface" },
         { "order": 4, "action": "Begin chest compressions", "details": "Place heel of hand on center of chest; place other hand on top; interlock fingers; push hard and fast 5-6cm deep at rate of 100-120 compressions per minute; perform 30 compressions" },
         { "order": 5, "action": "Give rescue breaths (optional)", "details": "If willing and trained: tilt head back, pinch nose, seal mouth with yours; give 2 breaths watching chest rise. If unwilling or unable: compression-only CPR is acceptable and effective" },
@@ -130,7 +130,7 @@
         "No response",
         "No normal breathing"
       ],
-      "escalation_action": "Call 999/112 immediately; perform CPR continuously until help arrives",
+      "escalation_action": "Call 112 immediately; perform CPR continuously until help arrives",
       "source": "IFRC 2020, Red Cross, UK Resuscitation Council"
     },
     "choking": {
@@ -165,7 +165,7 @@
         "Skin turning blue",
         "Person becomes unresponsive"
       ],
-      "escalation_action": "If person becomes unresponsive, call 999/112 and begin CPR",
+      "escalation_action": "If person becomes unresponsive, call 112 and begin CPR",
       "source": "IFRC 2020, St John Ambulance, WHO"
     },
     "shock": {
@@ -184,7 +184,7 @@
         { "order": 2, "action": "Lay person flat", "details": "Position on back with head level" },
         { "order": 3, "action": "Elevate legs", "details": "Raise legs about 30cm (unless leg/pelvis fracture, then keep flat)" },
         { "order": 4, "action": "Keep warm", "details": "Cover with blanket; avoid direct heat" },
-        { "order": 5, "action": "Call emergency services", "details": "Contact 999/112 immediately; do not leave alone" }
+        { "order": 5, "action": "Call emergency services", "details": "Contact 112 immediately; do not leave alone" }
       ],
       "do": [
         "Treat cause of shock",
@@ -207,7 +207,7 @@
         "Loss of consciousness",
         "Stops responding"
       ],
-      "escalation_action": "Call 999/112 immediately; continue care while waiting for help",
+      "escalation_action": "Call 112 immediately; continue care while waiting for help",
       "source": "IFRC 2020, St John Ambulance, Red Cross"
     },
     "burns": {
@@ -248,7 +248,7 @@
         "Electrical or chemical burns",
         "Person elderly or very young"
       ],
-      "escalation_action": "Call 999/112 for all serious burns; continue cooling while waiting",
+      "escalation_action": "Call 112 for all serious burns; continue cooling while waiting",
       "source": "St John Ambulance, IFRC 2020, Red Cross"
     },
     "fractures": {
@@ -290,7 +290,7 @@
         "Severe pain",
         "Fracture near chest or abdomen"
       ],
-      "escalation_action": "Call 999/112 for open fractures or serious injuries; immobilize and elevate while waiting",
+      "escalation_action": "Call 112 for open fractures or serious injuries; immobilize and elevate while waiting",
       "source": "St John Ambulance, IFRC 2020"
     },
     "head_injury": {
@@ -310,7 +310,7 @@
         { "order": 2, "action": "Stop bleeding", "details": "Apply light pressure with clean cloth (do not press hard)" },
         { "order": 3, "action": "Elevate head", "details": "Slightly raise head with support" },
         { "order": 4, "action": "Monitor condition", "details": "Watch for changes in consciousness and breathing" },
-        { "order": 5, "action": "Get emergency help", "details": "If unconscious, vomiting, or worsening confusion, call 999/112" }
+        { "order": 5, "action": "Get emergency help", "details": "If unconscious, vomiting, or worsening confusion, call 112" }
       ],
       "do": [
         "Keep head and neck still",
@@ -336,7 +336,7 @@
         "Worsening condition",
         "Difficulty breathing"
       ],
-      "escalation_action": "Call 999/112 immediately for any loss of consciousness or warning signs",
+      "escalation_action": "Call 112 immediately for any loss of consciousness or warning signs",
       "source": "St John Ambulance, IFRC 2020"
     },
     "snake_bite": {
@@ -377,7 +377,7 @@
         "Any sign of venom effects",
         "Unknown animal (safer to assume dangerous)"
       ],
-      "escalation_action": "Call 999/112 immediately; antivenom may be required",
+      "escalation_action": "Call 112 immediately; antivenom may be required",
       "source": "IFRC 2020, WHO"
     },
     "heat_stroke": {
@@ -394,7 +394,7 @@
         { "order": 1, "action": "Move to cool place", "details": "Get out of sun and heat immediately" },
         { "order": 2, "action": "Remove outer clothing", "details": "Allow cooling" },
         { "order": 3, "action": "Cool the person", "details": "Use wet sheets, cold sponging, fan, or cool water spray - aggressive cooling" },
-        { "order": 4, "action": "Call emergency services", "details": "Contact 999/112 immediately" },
+        { "order": 4, "action": "Call emergency services", "details": "Contact 112 immediately" },
         { "order": 5, "action": "Continue cooling", "details": "Until temperature drops or professional arrives" }
       ],
       "do": [
@@ -418,7 +418,7 @@
         "Seizures",
         "Any recognition signs"
       ],
-      "escalation_action": "Call 999/112 immediately; aggressive cooling essential",
+      "escalation_action": "Call 112 immediately; aggressive cooling essential",
       "source": "St John Ambulance, IFRC 2020"
     },
     "hypothermia": {
@@ -455,7 +455,7 @@
         "Difficulty breathing",
         "Slow or weak pulse"
       ],
-      "escalation_action": "Call 999/112 for severe hypothermia; gentle rewarming important",
+      "escalation_action": "Call 112 for severe hypothermia; gentle rewarming important",
       "source": "St John Ambulance, IFRC 2020"
     },
     "drowning": {
@@ -469,7 +469,7 @@
       "steps": [
         { "order": 1, "action": "Get person out of water", "details": "Safely remove from water (do not endanger yourself; don't enter if can't swim)" },
         { "order": 2, "action": "Check responsiveness", "details": "Tap, shout, assess" },
-        { "order": 3, "action": "Call for help", "details": "Contact 999/112 immediately" },
+        { "order": 3, "action": "Call for help", "details": "Contact 112 immediately" },
         { "order": 4, "action": "Check breathing", "details": "Maximum 10 seconds" },
         { "order": 5, "action": "Start CPR if not breathing", "details": "For drowning: give 5 initial rescue breaths first, then 30:2 pattern" }
       ],
@@ -492,7 +492,7 @@
         "Gasping or difficult breathing",
         "Any coughing/wheezing later (secondary drowning can occur hours later)"
       ],
-      "escalation_action": "Call 999/112 immediately; perform CPR if needed",
+      "escalation_action": "Call 112 immediately; perform CPR if needed",
       "source": "IFRC 2020, St John Ambulance, WHO"
     }
   },
@@ -773,8 +773,65 @@
       "source": "WHO, FEMA, IFRC 2020"
     }
   },
+  "emergency_contacts": {
+    "primary_emergency": {
+      "category": "PRIMARY EMERGENCY (24×7 – NATIONAL / LIFE-THREATENING)",
+      "contacts": [
+        {
+          "service": "Integrated Emergency Number",
+          "number": "112"
+        },
+        {
+          "service": "Ambulance (Medical Emergency)",
+          "number": "108"
+        },
+        {
+          "service": "Fire & Rescue Services",
+          "number": "101"
+        },
+        {
+          "service": "Police Emergency",
+          "number": "100"
+        }
+      ]
+    },
+    "disaster_management": {
+      "category": "DISASTER MANAGEMENT & COORDINATION (24×7)",
+      "contacts": [
+        {
+          "service": "State Disaster Management Control Room",
+          "number": "1070"
+        },
+        {
+          "service": "District Emergency Control Room",
+          "number": "1077"
+        }
+      ]
+    },
+    "regional_response": {
+      "category": "REGIONAL DISASTER RESPONSE (CHENNAI / TAMIL NADU)",
+      "contacts": [
+        {
+          "service": "Flood / Rain Emergency Help (Greater Chennai Corporation)",
+          "number": "1913"
+        },
+        {
+          "service": "Chennai Control Room (GCC)",
+          "numbers": [
+            "044-2561-9204",
+            "044-2561-9206",
+            "044-2561-9207"
+          ]
+        },
+        {
+          "service": "WhatsApp Disaster Assistance (TNSDMA)",
+          "number": "94458 69848"
+        }
+      ]
+    }
+  },
   "legal_disclaimers": {
-    "general_disclaimer": "This information is not a substitute for professional first aid training or medical care. In case of life-threatening emergency, always call emergency services (999/112 or local equivalent) immediately. First aid should be provided only to the level of training received. These guidelines are for educational purposes for non-medical civilians to support emergency response.",
+    "general_disclaimer": "This information is not a substitute for professional first aid training or medical care. In case of life-threatening emergency, always call emergency services (112 or local equivalent) immediately. First aid should be provided only to the level of training received. These guidelines are for educational purposes for non-medical civilians to support emergency response.",
     "offline_limitation": "This app is designed for offline emergency guidance only. In areas with cellular or radio coverage, immediately contact emergency services for professional medical help.",
     "training_recommendation": "For best results, users should complete formal first aid training with a recognized organization (Red Cross, St John Ambulance, etc.). This app supplements, not replaces, such training.",
     "liability_protection": "Users provide first aid at their own risk. This app is provided for educational guidance; users assume responsibility for decisions and outcomes. This content is based on authoritative sources but may not cover all situations or local variations.",
@@ -785,3 +842,4 @@
     "accessibility_note": "This app is designed for offline use in disaster/emergency situations without internet access. For comprehensive information, visit official organization websites."
   }
 }
+

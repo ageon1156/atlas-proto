@@ -128,3 +128,4 @@ class UiPreferencesDataSource @Inject constructor(private val dataStore: DataSto
         val EMERGENCY_DISCLAIMER_ACCEPTED = booleanPreferencesKey(KEY_EMERGENCY_DISCLAIMER_ACCEPTED)
     }
 }
+

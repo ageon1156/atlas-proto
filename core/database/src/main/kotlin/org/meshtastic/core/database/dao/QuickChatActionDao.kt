@@ -49,3 +49,4 @@ interface QuickChatActionDao {
     @Query("Update quick_chat set position=position-1 where position>=:position")
     suspend fun decrementPositionsAfter(position: Int)
 }
+

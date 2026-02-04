@@ -310,3 +310,4 @@ fun PrivateKeyRegenerateDialog(
         )
     }
 }
+

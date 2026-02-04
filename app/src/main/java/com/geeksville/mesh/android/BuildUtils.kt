@@ -34,3 +34,4 @@ object BuildUtils {
                 Build.MANUFACTURER.contains("Genymotion") ||
                 Build.BRAND.startsWith("generic") && Build.DEVICE.startsWith("generic")
 }
+

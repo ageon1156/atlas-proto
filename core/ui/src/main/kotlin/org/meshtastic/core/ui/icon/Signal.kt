@@ -236,3 +236,4 @@ val MeshtasticIcons.SignalCellular4Bar: ImageVector
     }
 
 private var signalCellular4Bar: ImageVector? = null
+

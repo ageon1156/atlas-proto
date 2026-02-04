@@ -57,3 +57,4 @@ class DatabaseModule {
     fun provideTracerouteNodePositionDao(database: MeshtasticDatabase): TracerouteNodePositionDao =
         database.tracerouteNodePositionDao()
 }
+

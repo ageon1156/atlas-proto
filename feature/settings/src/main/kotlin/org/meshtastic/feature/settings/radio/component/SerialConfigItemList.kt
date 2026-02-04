@@ -138,3 +138,4 @@ fun SerialConfigScreen(viewModel: RadioConfigViewModel = hiltViewModel(), onBack
         }
     }
 }
+

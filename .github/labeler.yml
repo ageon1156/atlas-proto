@@ -33,3 +33,4 @@ refactor:
 # - all:
 #   - head-branch: ['^((?!feat).)*$', '^((?!repo).)*$', '^((?!renovate).)*$', '^((?!scheduled).)*$']
 
+

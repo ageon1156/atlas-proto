@@ -40,3 +40,4 @@ data class NetworkFirmwareReleases(
     @SerialName("pullRequests") val pullRequests: List<NetworkFirmwareRelease> = listOf(),
     @SerialName("releases") val releases: Releases = Releases(),
 )
+

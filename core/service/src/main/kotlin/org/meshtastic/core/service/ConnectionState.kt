@@ -38,3 +38,4 @@ sealed class ConnectionState {
 
     fun isDeviceSleep() = this == DeviceSleep
 }
+

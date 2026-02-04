@@ -67,3 +67,4 @@ constructor(
 
     override fun getUser(userId: String?) = nodeRepository.getUser(userId ?: DataPacket.ID_BROADCAST)
 }
+

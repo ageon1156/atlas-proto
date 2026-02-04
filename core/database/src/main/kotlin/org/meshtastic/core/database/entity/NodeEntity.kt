@@ -240,3 +240,4 @@ data class NodeEntity(
         hopsAway = hopsAway,
     )
 }
+

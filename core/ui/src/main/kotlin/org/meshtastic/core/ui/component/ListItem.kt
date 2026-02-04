@@ -179,3 +179,4 @@ private fun ListItemPreviewSupportingText() {
         ListItem(text = "Text 1", leadingIcon = Icons.Rounded.Android, supportingText = "Text2", trailingIcon = null)
     }
 }
+

@@ -114,3 +114,4 @@ private fun PositionPrecisionPreferencePreview() {
         modifier = Modifier.padding(horizontal = 16.dp),
     )
 }
+

@@ -2,7 +2,7 @@ name: Feature Request
 description: File a request for new feature or functionality.
 title: "[Feature Request]: "
 labels: [enhancement]
-projects: [meshtastic/Meshtastic-Android]
+projects: [atlas/Atlas]
 body:
   - type: checkboxes
     id: checklist
@@ -12,9 +12,9 @@ body:
         Please make sure you have done the following before submitting your feature request.
         Requests that do not meet these criteria will be closed.
         Links:  
-          [**OPEN ISSUES**](https://github.com/meshtastic/Meshtastic-Android/issues)
-          [**CLOSED ISSUES**](https://github.com/meshtastic/Meshtastic-Android/issues?q=is%3Aissue+is%3Aclosed)
-          [Contribution Guidelines](https://github.com/meshtastic/Meshtastic-Android/blob/main/README.md#contributing)
+          [**OPEN ISSUES**](https://github.com/atlas/Atlas/issues)
+          [**CLOSED ISSUES**](https://github.com/atlas/Atlas/issues?q=is%3Aissue+is%3Aclosed)
+          [Contribution Guidelines](https://github.com/atlas/Atlas/blob/main/README.md#contributing)
       options:
         - label:
             I have used the search function for **OPEN ISSUES** to see if someone else has already submitted the same feature request.

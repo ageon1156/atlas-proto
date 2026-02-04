@@ -289,3 +289,4 @@ class WifiOtaTransport(private val deviceIpAddress: String, private val port: In
             }
     }
 }
+

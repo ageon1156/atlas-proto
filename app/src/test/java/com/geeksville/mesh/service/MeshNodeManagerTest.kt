@@ -135,3 +135,4 @@ class MeshNodeManagerTest {
         assertNull(nodeManager.myNodeNum)
     }
 }
+

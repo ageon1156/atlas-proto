@@ -115,39 +115,19 @@ object SettingsRoutes {
 
     // region module config routes
 
-    @Serializable data object MQTT : Route
-
     @Serializable data object Serial : Route
 
     @Serializable data object ExtNotification : Route
 
     @Serializable data object StoreForward : Route
 
-    @Serializable data object RangeTest : Route
-
-    @Serializable data object Telemetry : Route
-
     @Serializable data object CannedMessage : Route
-
-    @Serializable data object Audio : Route
-
-    @Serializable data object RemoteHardware : Route
-
-    @Serializable data object NeighborInfo : Route
-
-    @Serializable data object AmbientLighting : Route
-
-    @Serializable data object DetectionSensor : Route
-
-    @Serializable data object Paxcounter : Route
 
     // endregion
 
     // region advanced config routes
 
     @Serializable data object CleanNodeDb : Route
-
-    @Serializable data object DebugPanel : Route
 
     @Serializable data object About : Route
 
@@ -173,3 +153,4 @@ object SOSRoutes {
 
     @Serializable data object SOSHome : Route
 }
+

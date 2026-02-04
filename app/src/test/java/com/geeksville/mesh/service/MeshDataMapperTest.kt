@@ -128,3 +128,4 @@ class MeshDataMapperTest {
         assertEquals(DataPacket.PKC_CHANNEL_INDEX, result!!.channel)
     }
 }
+

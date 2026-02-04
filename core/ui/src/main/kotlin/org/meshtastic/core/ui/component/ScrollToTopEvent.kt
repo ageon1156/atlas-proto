@@ -26,3 +26,4 @@ sealed class ScrollToTopEvent {
 
     data object ConversationsTabPressed : ScrollToTopEvent()
 }
+

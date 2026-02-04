@@ -76,3 +76,4 @@ jobs:
               echo "$TAGS_TO_DELETE"
             fi
           fi
+

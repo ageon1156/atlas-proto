@@ -54,3 +54,4 @@ fun TitledCard(title: String?, modifier: Modifier = Modifier, content: @Composab
 private fun TitledCardPreview() {
     AppTheme { Surface { TitledCard(title = "Title") { Box(modifier = Modifier.fillMaxWidth().height(100.dp)) {} } } }
 }
+

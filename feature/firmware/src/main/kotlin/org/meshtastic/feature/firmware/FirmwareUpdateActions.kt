@@ -28,3 +28,4 @@ data class FirmwareUpdateActions(
     val onDone: () -> Unit,
     val onDismissBootloaderWarning: () -> Unit,
 )
+

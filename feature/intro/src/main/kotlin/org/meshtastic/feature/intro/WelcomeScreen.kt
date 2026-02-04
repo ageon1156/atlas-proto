@@ -119,3 +119,4 @@ internal fun WelcomeScreen(onGetStarted: () -> Unit) {
 private fun WelcomeScreenPreview() {
     WelcomeScreen(onGetStarted = {})
 }
+

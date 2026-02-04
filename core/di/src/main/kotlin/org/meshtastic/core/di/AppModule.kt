@@ -31,3 +31,4 @@ object AppModule {
     fun provideCoroutineDispatchers(): CoroutineDispatchers =
         CoroutineDispatchers(io = Dispatchers.IO, main = Dispatchers.Main, default = Dispatchers.Default)
 }
+

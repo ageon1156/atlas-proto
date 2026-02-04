@@ -413,3 +413,4 @@ private fun PreviewEnvironmentMetricsContent() {
         Surface { EnvironmentMetricsContent(telemetry = fakeTelemetry, environmentDisplayFahrenheit = false) }
     }
 }
+

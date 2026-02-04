@@ -122,3 +122,4 @@ data class NavigationDestination(
     val icon: ImageVector,
     val badge: (@Composable () -> Unit)? = null
 )
+

@@ -120,3 +120,4 @@ fun RegularPreference(
 private fun RegularPreferencePreview() {
     RegularPreference(title = "Advanced settings", subtitle = "Text2", onClick = {})
 }
+

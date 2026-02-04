@@ -140,3 +140,4 @@ class SignalStrengthProvider : PreviewParameterProvider<Int> {
 private fun MaterialBluetoothSignalInfoPreview(@PreviewParameter(SignalStrengthProvider::class) rssi: Int) {
     AppTheme { Surface { MaterialBluetoothSignalInfo(rssi = rssi) } }
 }
+

@@ -108,3 +108,4 @@ internal fun MapTypeDropdown(
         )
     }
 }
+
