@@ -51,6 +51,45 @@ import org.meshtastic.core.service.SERVICE_NOTIFY_ID
 import org.meshtastic.core.service.ServiceRepository
 import javax.inject.Inject
 
+/**
+ * MeshService is the core Android foreground Service that manages all mesh radio communication.
+ *
+ * This service acts as the central hub for:
+ * - Managing connections to mesh radio devices (Bluetooth, WiFi, USB)
+ * - Processing incoming protobuf messages from the mesh network
+ * - Sending commands and data packets to the mesh
+ * - Coordinating node discovery and tracking
+ * - Maintaining persistent mesh connectivity in the background
+ *
+ * Architecture:
+ * - Runs as a foreground service with persistent notification
+ * - Uses START_STICKY to survive process death
+ * - Injects handlers and managers via Hilt for modular responsibility
+ * - Exposed to UI via IMeshService AIDL interface for IPC
+ *
+ * Key Components:
+ * - RadioInterfaceService: Manages device connections (BLE/Network/USB)
+ * - MeshMessageProcessor: Parses incoming FromRadio protobuf messages
+ * - PacketHandler: Processes mesh packets (messages, telemetry, positions)
+ * - MeshCommandSender: Builds and sends ToRadio commands to device
+ * - MeshNodeManager: Maintains in-memory node database
+ * - MeshRouter: Orchestrates configuration flow and routing logic
+ * - MeshConnectionManager: Handles connection lifecycle and notifications
+ *
+ * Lifecycle:
+ * 1. onCreate(): Initialize handlers, start listening for radio data
+ * 2. onStartCommand(): Start foreground with notification
+ * 3. Service runs continuously while device is connected
+ * 4. onDestroy(): Clean up resources, disconnect from device
+ *
+ * Data Flow:
+ * Device → RadioInterfaceService.receivedData → MeshMessageProcessor →
+ * FromRadioPacketHandler → [Handlers] → Repositories → Database → UI
+ *
+ * @see RadioInterfaceService for device connection management
+ * @see MeshMessageProcessor for protobuf parsing logic
+ * @see IMeshService for the public API exposed to UI components
+ */
 @AndroidEntryPoint
 @Suppress("TooManyFunctions", "LargeClass")
 class MeshService : Service() {

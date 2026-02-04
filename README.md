@@ -41,13 +41,22 @@ If you encounter any problems or have questions, [ask us on the discord](https:/
 
 ## Documentation
 
-The project's documentation is generated with [Dokka](https://kotlinlang.org/docs/dokka-introduction.html) and hosted on GitHub Pages. It is automatically updated on every push to the `main` branch.
+### Understanding the Codebase
 
-[**View Documentation**](https://meshtastic.github.io/Meshtastic-Android/)
+- **[QUICK_START.md](QUICK_START.md)** - Quick reference guide to navigate and understand the codebase
+- **[ARCHITECTURE.md](ARCHITECTURE.md)** - Comprehensive architectural overview explaining the app's structure, patterns, and key components
+- **[HOW_IT_WORKS.md](HOW_IT_WORKS.md)** - Detailed walkthrough of how data flows through the system and how major features work
+- **[AGENTS.md](AGENTS.md)** - Guide for AI agents and developers working on the codebase
 
-### Generating Locally
+### API Documentation
 
-You can generate the documentation locally to preview your changes.
+The project's API documentation is generated with [Dokka](https://kotlinlang.org/docs/dokka-introduction.html) and hosted on GitHub Pages. It is automatically updated on every push to the `main` branch.
+
+[**View API Documentation**](https://meshtastic.github.io/Meshtastic-Android/)
+
+### Generating API Docs Locally
+
+You can generate the API documentation locally to preview your changes.
 
 1.  **Run the Dokka task:**
     ```bash
